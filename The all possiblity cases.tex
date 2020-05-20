@@ -1,0 +1,177 @@
+\documentclass[12pt,twoside]{report}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{xcolor}
+
+\title{The  notice from exact ,apprximate ,and numerical calculation of GES}
+\author{talipjan}
+
+\begin{document}
+	
+			
+	\paragraph{reference concepts}
+	lemma6.Let there be given  a  set of product vectors $B={\ket{\varPsi _{x}}  \otimes \ket{\Psi_{x}} }_{x}$ from $ C^{m}\otimes C^{n} $ with cardinality $ |B|\geq m+n-1. $ if any m-tuple of vectors $ \ket{\Psi_{x}} $ span $ C^{m} $and  any n-tuple of vectors $ \ket{\varPsi_{x}} $ span $ C^{n} $,then there is no product vector in the orthocomplement of span B.	
+	\newline\\
+	while we care about linear indepence of the coordinates,at the same time we require the condition dim span B$ < d^{N} $ to hold ,that is ,the resulting GES to be nonempty.
+\paragraph{our cnsideration}
+   In our case we consider multiple qubit Hilbert spaces, i.e.,$ H_{2^{3}} :=(C^{2})^{\otimes3}$
+   \\
+   \begin{equation*}
+B= \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\otimes(1,x+y\alpha+Z\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace 
+   \end{equation*}
+   \\   
+   \\
+    where a,b,c,A,B,C,XY,Z$ \in \{-1,0,1\} $
+   \\
+   \\
+   First of all,we  move main detail of discusstion,give some direct calculation on it.
+   B=$ \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\otimes(1,x+y\alpha+Z\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace $
+  \\
+  \\
+   $A|BC$
+  \\
+  AB: $ (1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\ =(1,a+b\alpha+c\alpha^{2},A+B\alpha+C^{2},Aa+(Ba+Ab+Bc)\alpha+(Ca+Bb+Ac+Cc)\alpha^{2}+(Cb+Bc)\alpha^{3}+Cc\alpha^{4})$ Assume it is coordinates with respect  $ \alpha   $ linearly independent polynomials have dimension is 4.  (depending on spanning property)
+  \\
+  C:$ (1,x+y\alpha+Z\alpha^{2}) $ linearly independt polynomial dimestion is 2.(depending on spanning property)
+  \\
+  \\
+  $ B|AC $
+  \\
+  B:$ (1,A+B\alpha+C^{2}) $ dimmestion is 2
+  \\
+  AC:$ (1,a+b\alpha+c\alpha^{2})\otimes(1,x+y\alpha+Z\alpha^{2})=(1,a+b\alpha+c\alpha^{2},x+y\alpha+Z\alpha^{2},Xa+(Ya+Xb+Yc)\alpha+(Za+Yb+Xc+Zc)\alpha^{2}+(Zb+Yc)\alpha^{3}+Zc\alpha^{4}) $ dim is 4\\
+  B:$ (1,A+B\alpha+C^{2}) $ dim is 2
+  \\
+  \\
+  \\
+  $ A|BC $\\
+  \\
+  BC:$ (1,A+B\alpha+C^{2})\otimes(1,x+y\alpha+Z\alpha^{2})=(1,A+B\alpha+C^{2},x+y\alpha+Z\alpha^{2},XA+(YA+XB+YC)\alpha+(ZA+YB+XC+ZC)\alpha^{2}+(ZB+YC)\alpha^{3}+Zc\alpha^{4}) $ dim is 4\\
+  \\
+  A:$(1,a+b\alpha+c\alpha^{2})$ dim is 2.
+  \\  
+  Second,let $\bar{B}$ be a subspace whose orthogonal to spane of B.and $\bar{B}$ span by $ \ket{\xi,\gamma}= \ket{\xi}_{S}\otimes\ket{\gamma}_{\bar{S}}=(\ket{\xi}_{0})_{S}\otimes(\Ket{\gamma}_{0},\ket{\gamma}_{1})_{\bar{S}}$
+  \\
+  we could easly say that ,the  tesnodr product  of the  coorosponding pair vecors in these two set are equal to zero.
+ between two sets have bijective function relation.let say F:$ (C^{2})^{2} \longrightarrow (C^{2})^{2} $,or taking it a step further,we could say that F is a transformation.\\
+ Definition: A linear transformation T : v$ \longrightarrow v $is said to be non-singular if T(v) = 0 $ \Rightarrow v = 0  i.e. N(T) = {0}  $ 
+ \\
+ Definition: A linear transformation T : V is said to be
+ singular if  some $ \exists    v  \epsilon   V s.t. v\neq 0   \ \ and \ \ T(v) = 0 $ i.e. N(T) contains at least one-zero element. 
+  \\
+  Definition:A linear transformation is an isomorphism if it
+  is one-one and onto.
+  i.e. T : $V \longrightarrow W$is an isomorphism if\\
+  (1) T is linear transformation.\\
+  (2) T is one-one.\\
+  (3) T is onto.\\
+  \\
+  Then V and W are called isomorphic.\\
+  We write V $ \cong $ W\\
+  \\
+  THEOREM: V $ \cong $ W $ \Leftrightarrow $dim V = dim W
+  cooroseponding proof in  silde in attachment.\\
+  \\
+  \\
+  from the definition of linear transformation ,we could say that F:$ (C^{2})^{2} \longrightarrow (C^{2})^{2} $ could generate a Matrix F.and matrix F is consist of $ A,B,C $\\
+  if we choose a $ S| \bar{S} $ bipartition,$ S\cup \bar{S} =A$ ,where local dimention of S and $ \bar{S} $ are 2,4 respectively.  
+  the question will rise in here,which what about the order of bipartition cut ?
+ \\
+ the answer coming from Galois theory by Harlod .M.Edwards.page 47-55.content:Basic Galois Theory: The Galois Group (permutaion of the roots of polynomilas)
+ \\
+ for example we suppose S=$B  $ \ \ and$  \bar{S}=AC $ ,which mean we have a permutaion p(123)=213.it is easy to see that this order of permutaion is represent a unique individual bipartition. 
+ \ \ \ \ \ \ \ \ \ our main operation on our case  staring from new.if we assume A biproduct vector  $ \ket{\xi,\gamma}= \ket{\xi}_{S}\otimes\ket{\gamma}_{\bar{S}}=(\ket{\xi}_{0})_{S}\otimes(\Ket{\gamma}_{0},\ket{\gamma}_{1})_{\bar{S}}$ belong to    $ \bar{B} $ ,it should satsify following eqaution:
+ $ \bra{\zeta,\gamma}\ket{\Psi}=0 \ \  \forall \alpha $ where $ \ket{\Psi}\in B $\\
+ \\
+ $ A|BC cut $\\
+ \\
+ $ \bra{\xi}_{0}\ket{(1,a+b\alpha+c\alpha^{2})}\otimes\bra{\gamma_{0},\gamma}_{1}\ket{(1,A+B\alpha+C\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2})}=0 $\\
+ \\
+ $ \bra{\zeta}_{0}\otimes(1,a+b\alpha+c\alpha^{2})\otimes\bra{\gamma_{0},\gamma}_{1}((1,A+B\alpha+C\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2}),AX+(BaX+AY+BZ)\alpha+(AZ+YB+XC+ZC)\alpha^{2}+(ZB+YC)\alpha^{3}+ZC\alpha^{4})=0 $\\
+ After sorting:\\
+ $ \bra{\gamma_{0},\gamma}_{1}*(1+A+XA)+\bra{\gamma_{0},\gamma}_{1}*(B+YA+XB+YC)\alpha+(\bra{\gamma_{0},\gamma}_{1}*(Z+ZA+YB+XC+ZC)\alpha^{2}+\bra{\gamma_{0},\gamma}_{1}(ZB+YC)\alpha^{3}+\bra{\gamma_{0},\gamma}_{1}(ZC\alpha^{4}))=0$
+ \\
+ since left side of all above equations is a ploynomila degree 4 in variable $\alpha$.if we consider must be hold ,then the coefficients are qual to zero.which means :
+ \\
+ $ \bra{\gamma_{0},\gamma}_{1}*(1+A+XA) =0$\\
+ $\bra{\gamma_{0},\gamma}_{1}*(B+YA+XB+YC)=0  $\\
+ $ (\bra{\gamma_{0},\gamma}_{1}*(Z+ZA+YB+XC+ZC)=0 $\\
+ $ \bra{\gamma_{0},\gamma}_{1}(ZB+YC)=0 $\\
+ $ \bra{\gamma_{0},\gamma}_{1}(ZC)=0 $
+ \\
+ \\
+ \begin{equation}
+ E=\bra{\gamma_{1}}
+ \begin{bmatrix}
+ 1+A+A+XA\\
+ B+YA+XB+Yc\\
+ Z+ZA+YB+XC+ZC\\
+ ZB+YC\\
+ ZC
+ \end{bmatrix}
+ \end{equation}
+ \\
+  if we assume $ \ket{\gamma_{0}}$ is a constant parameter,then every bipartition have 5 homogenous linear  equations with 2 unknowns .and we could write these linear homogenous equation in matrix form.\\
+ $ B|AC cut $\\
+ \\
+ $ \bra{\xi}_{0}\ket{(1,A+B\alpha+C\alpha^{2})}\otimes\bra{\gamma_{0},\gamma}_{1}\ket{(1,a+b\alpha+c\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2})}=0 $\\
+ $ \bra{\zeta}_{0}\otimes(1,A+B\alpha+C\alpha^{2})\otimes\bra{\gamma_{0},\gamma}_{1}((1,a+b\alpha+c\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2}),Xa+(Ya+Xb+Yc)\alpha+(Za+Yb+Xc+Zc)\alpha^{2}+(Zb+Yc)\alpha^{3}+Zc\alpha^{4})=0 $\\
+ After sorting:\\
+ $ \bra{\gamma_{0},\gamma}_{1}*(1+a+Xa)+\bra{\gamma_{0},\gamma}_{1}*(b+Ya+Xb+Yc)\alpha+(\bra{\gamma_{0},\gamma}_{1}*(Z+Za+Yb+Xc+Zc)\alpha^{2}+\bra{\gamma_{0},\gamma}_{1}(Zb+Yc)\alpha^{3}+\bra{\gamma_{0},\gamma}_{1}(Zc\alpha^{4}))=0$
+ \\
+ since left side of all above equations is a ploynomila degree 4 in variable $\alpha$.if we consider must be hold ,then the coefficients are qual to zero.which means :
+ \\
+ $ \bra{\gamma_{0},\gamma}_{1}*(1+a+Xa) =0$\\
+ $\bra{\gamma_{0},\gamma}_{1}*(b+Ya+Xb+Yc)=0  $\\
+ $ (\bra{\gamma_{0},\gamma}_{1}*(Z+Za+Yb+Xc+Zc)=0 $\\
+ $ \bra{\gamma_{0},\gamma}_{1}(Zb+Yc)=0 $\\
+ $ \bra{\gamma_{0},\gamma}_{1}(Zc)=0 $
+ \\
+ \begin{equation}
+ E=\bra{\gamma_{1}}
+ \begin{bmatrix}
+ 1+a+Xa\\
+ b+Ya+Xb+Yc\\
+ Z+Za+Yb+Xc+Zc\\
+ Zb+Cc\\
+ Zc
+ \end{bmatrix}
+ \end{equation}
+ \\
+  if we assume $ \ket{\gamma_{0}}$ is a constant parameter,then every bipartition have 5 homogenous linear  equations with 2 unknowns .and we could write these linear homogenous equation in matrix form.\\
+  $ C|AB cut $\\
+ \\
+ $ \bra{\xi}_{0}\ket{(1,X+Y\alpha+Z\alpha^{2})}\otimes\bra{\gamma_{0},\gamma}_{1}\ket{(1,a+b\alpha+c\alpha^{2}),(1,A+B\alpha+C\alpha^{2})}=0 $\\
+ $ \bra{\zeta}_{0}\otimes(1,X+Y\alpha+Z\alpha^{2})\otimes\bra{\gamma_{0},\gamma}_{1}((1,a+b\alpha+c\alpha^{2}),(1,A+B\alpha+C\alpha^{2}),Aa+(Ba+Ab+Bc)\alpha+(Ca+Bb+Ac+Cc)\alpha^{2}+(Cb+Bc)\alpha^{3}+Cc\alpha^{4})=0 $\\
+ After sorting:\\
+ $ \bra{\gamma_{0},\gamma}_{1}*(1+a+Aa)+\bra{\gamma_{0},\gamma}_{1}*(b+Ba+Ab+Bc)\alpha+(\bra{\gamma_{0},\gamma}_{1}*(C+Ca+BB+Ac+Cc)\alpha^{2}+\bra{\gamma_{0},\gamma}_{1}(Cbb+Bc)\alpha^{3}+\bra{\gamma_{0},\gamma}_{1}(Cc\alpha^{4}))=0$
+ \\
+ since left side of all above equations is a ploynomila degree 4 in variable $\alpha$.if we consider must be hold ,then the coefficients are qual to zero.which means :
+ \\
+ $ \bra{\gamma_{0},\gamma}_{1}*(1+a+Aa) =0$\\
+ $\bra{\gamma_{0},\gamma}_{1}*(b+Ba+Ab+Bc)=0  $\\
+ $ (\bra{\gamma_{0},\gamma}_{1}*(C+Ca+BB+Ac+Cc)=0 $\\
+ $ \bra{\gamma_{0},\gamma}_{1}(Cbb+Bc)=0 $\\
+ $ \bra{\gamma_{0},\gamma}_{1}(Cc)=0 $
+ \\
+ $  $
+ \\
+\begin{equation}
+E=\bra{\gamma_{1}}
+\begin{bmatrix}
+b+Ba+Ab+Bc\\
+C+Ca+Bb+Ac+Cc\\
+Cb+Bc\\
+Cc
+\end{bmatrix}
+\end{equation}
+and this kind of matrix does not exit for satisfying $ \bra{\zeta,\gamma}\ket{\Psi}=0 \ \  \forall \alpha $ where $ \ket{\Psi}\in B $\\
+ and let $ \bar{B} $ be a GES,it is requires that the system only has the trivial soultion.and it will happen when the matirx E of the sytem is full rank.
+ r(E)=5,for all $ \bra{\gamma_{1}} $ is not same time equal to zero.
+\end{document}

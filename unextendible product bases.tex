@@ -1,0 +1,197 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+
+\title{The short presentation about UPB ,UBB,CES,GES}
+\author{talipjan}
+
+
+\begin{document}
+ \maketitle
+ The importent  definitions in my prepresentation:
+ 
+ \section{Before Start my presentation i think it is neccessary to  recall some elmentarty definitions which is relative to my main topic in this slide. }
+ \subsection{The fully product stats:let say C is N-dimentional Hilbert space.and we can using the 
+ 	vector$ \ket{\alpha} $} which is have N components could express one certein stats.we could also write this states in the following form:$\ket{\alpha}_{A_{1}.....A_{N}}=\ket{\alpha}_{A_{1}\otimes\ket{\alpha}_{A_{2}}\otimes.......\ket{\alpha}_{A_{N}}}$
+ is called fully product state .where $A_{1}....A_{N}$ subspacse  of hilberst space C and might have same dimention or may not.if could write in this form give state is called entagled state.our main tool is entaglment stat
+ \subsubsection{The unextendible product bases:we have a set of fully product vectors $U=\{\{\ket{\alpha}_{i}\equiv\ket{\alpha}_{A_{1}}\otimes\ket{\alpha}_{A_{1}}.......\otimes\ket{\alpha}_{A_{i}}\}_{i=1}^{u}$} ,where $\ket{\alpha}\in A_{d_{1}.......d_{N}}$span  a a proper subspace $H_{d_{1}......_{d_{N}}}$ which means that any vectors in this subspace could express by any linear combination with vector $\ket{\alpha}\in A_{d_{1}.......d_{N}}$.
+ meanwhile,the complement of the U no any fully product vectors .
+ beware of the value of u which is a littile notation in set U .problem will starting in there (jock).it may rouly could say the number of fully product vectors number.there is no general formula for configuration the number  of  thevectors which we consider in above.but we will be find mimium size of set U.
+ next stap,in set  U these vectors is called orthogonal unextendible product basis(if they are mutually orthogonal each other) and non-orthogonal product basis(if not have mutually orthogonality property) ,respectivelly .
+ 
+ {\scriptsize {\Huge }}Example: In ${(C^{3}})^{3}$ case ,total number of basis vector is 27.but the minimum possible of vectors in a UPB S$\subseteq C^{d_{1}}\bigotimes.........\bigotimes C^{d_{p}}$ is 7.there is have 20 missing states we have to consider.and it is possible to find more orthonormal basis which for creat a UPB.
+ 
+ 
+ In my assignment is looking for the UPB in ${(C^{2}})^{3}$ ,of course ,there is have a set B=\{${\ket{000},\ket{1\epsilon\epsilon},\ket{\epsilon1\epsilon^{-}},\ket{\epsilon^{-}\epsilon1}\}}$,which means that these 4 orthonormal basis are mutually orthogonal each other .and they can be write in the fully product form.meanwhile the complement of B dont exit any fully product vectors orthogonal to all members in B.of course,the question will rising in here.is there any fully product vectors in we will creat orthogonal to thses four vectors and gurante there is no any more such vector?.if yes ,then find it .if no then prove it of non existence.
+ 
+\subsection{The completely entangled subsace(CES):}
+	The completely entangled subsace(CES):A subpspace $C\subset H_{1}......H_{N}$ and evrey statets in this subpspaces are entagnled ,then we call this supbspace is completely entenglment subspace.of course any subpsces of $C\subset H_{1}......H_{N}$  will CES or no ?how to define the size of CES?
+	before the answer this question I would like to give one more definition about GES.
+	
+	\subsection{The genuinely entagnled subspaces(GES):}
+	The genuinly entangled subspace:Let say a subspace $\varOmega \subset H_{1}......H_{N} $ the all states in this subspac also entagled.It looks same definition as CES,but no.when we consider GES beware about the states in GES .the every stats in th form :
+	${\ket{\Psi}_{d_{1}....._{d_{N}}}\neq\ket{\Psi}_{s_{1}}\otimes\ket{\Psi}_{s_{1}^{-}}............\otimes\ket{\Psi}_{s_{N}}\otimes\ket{\Psi}_{s_{N}}}$
+	for any bipartite cut$ S|S^{-}$.
+	
+	where S is a subset of D and $S^{-}:=D \backslash S$.
+
+ 
+ 
+ new the answer of the questions in about will coming:All of GES is CES,but opposite side not have valiued.
+ 
+ \subsubsection{}
+ 
+ \title{\large }{The quastion is rising what is the relationshio UPB,CES, GES?}
+
+
+As I extracting the knowledge  from the papers which I studed befor ,when we looking for UPB in given case,CES,GES  as a tool.  
+for example in whole space we want to pick some fully product vectors creat a UPB ,meanwhile the complement of this subspace(UPB) need to consider.if the complemt space of UPB ,if it shows that there is no more any fully product vector we could put in UPB anymore.then this is complement subspace is CES.
+but I think it is not safe at all for looking for UPB.
+
+%
+
+
+%
+%
+
+
+
+The UPB may construct in many way of course,but anyway one who when consider UPB always first consider aboout the complement of UPB is GES or not .
+
+folowing is my assignment:In $(C^2)^3$,looking for UPB(actually same is UBB)size of 5.
+
+
+following is my calculation:
+all of the fully product vectors in $(C^2)^3$,A,B,C represent $C^2$ respectvelly.
+\paragraph{}
+$ \ket{\Psi}_{000} =\ket{0}_{A}\bigotimes \ket{0}_{B}\bigotimes\ket{0}_{C}$,  
+\newline \\
+
+$ \ket{\Psi}_{111} =\ket{1}_{A}\bigotimes \ket{1}_{B}\bigotimes\ket{1}_{C}$
+\newline \\
+
+ $ \ket{\Psi}_{0\varepsilon1} =\ket{0}_{A}\bigotimes (\ket{0}+\ket{1})_{B}\bigotimes\ket{1}_{C}$
+ \newline \\
+ 
+ $ \ket{\Psi}_{0\varepsilon^{-}1} =\ket{0}_{A}\bigotimes (\ket{0}-\ket{1})_{B}\bigotimes\ket{1}_{C}$
+ \newline \\
+ 
+ $ \ket{\Psi}_{10\varepsilon} =\ket{1}_{A}\bigotimes (\ket{0})_{B}\bigotimes(\ket{0}+\ket{1})_{C}$
+ \newline \\
+ 
+ $ \ket{\Psi}_{10\varepsilon^{-}} =\ket{1}_{A}\bigotimes (\ket{0})_{B}\bigotimes(\ket{0}-\ket{1})_{C}$
+ \newline \\
+ 
+ $ \ket{\Psi}_{\varepsilon10} =(\ket{0}+\ket{1})_{A}\bigotimes (\ket{1})_{B}\bigotimes\ket{0}_{C}$
+ \newline \\
+ 
+ $ \ket{\Psi}_{\varepsilon^{-} 10} =(\ket{0-}\ket{1})_{A}\bigotimes (\ket{1})_{B}\bigotimes\ket{0}_{C}$
+ \newline  \\
+ where we simply write in $\varepsilon=\ket{0}+\ket{1}$ ,$\varepsilon^{-}=\ket{0}-\ket{1}$
+ \newline \\
+ in this case ,we chose state stoper is $ \ket{w}=(\ket{0}+\ket{1})^{\otimes3} $,and it is not hard to see $ \ket{\Psi}_{000} ,  \ket{\Psi}_{111},\ket{\Psi}_{0\varepsilon1},\ket{\Psi}_{10\varepsilon}$ is not orthogonal to stoper.
+ \newline \\
+ The fully product vectors  $\ket{\Psi}_{0\varepsilon^{-}1}$,    $\ket{\Psi}_{10\varepsilon^{-}}$ , $\ket{\Psi}_{\varepsilon^{-} 10}$ with state stoper $\ket{w}=(\ket{0}+\ket{1})^{\otimes3}$  orthogonal each other ,creat a UPB.
+ \newline \\\
+ My mition is new find a vector by any cut,could put in above four vectors togather could creat an UPB.
+ \newline \\\\
+ new ,we have UPB is S={$\ket{000}$,    $\ket{1\varepsilon^{-} \epsilon}$ , $\ket{\epsilon1\varepsilon^{-}}$ , $\ket{\epsilon^{-}\epsilon1}$}
+ \newline\\
+ 
+ 
+ 
+ My confuseing point is how to chose vectors for creat new UPB or from above we already finded four vectors?
+ \newline \\
+ 
+ step 1:
+ A|BC cut
+ \newline \\
+ 1).$ \ket{\gamma} = \ket{\Psi}_{000} - \ket{\Psi}_{0\varepsilon1}$
+ \newline \\
+ 
+ =$\ket{0}_{A}\bigotimes \ket{0}_{B}\bigotimes\ket{0}_{C}-\ket{0}_{A}\bigotimes $
+ \newline \\
+ =$\ket{0}_{A}\bigotimes(\ket{0}_{B}\bigotimes\ket{0}_{C}-(\ket{0}+\ket{1})_{B}\bigotimes\ket{1}_{C}) $
+ 
+ but this vector non- biseparable in this cut.
+ \newline \\
+ similarly,
+ \newline \\
+ $ \ket{\delta} =\ket{\Psi}_{000}- \ket{\Psi}_{0\varepsilon^{-}1} $
+ \newline \\
+  =$\ket{0}_{A}\bigotimes(\ket{0}_{B}\bigotimes\ket{0}_{C}-\ket{0}_{A}\bigotimes (\ket{0}-\ket{1})_{B}\bigotimes\ket{1}_{C}$
+ \newline \\  
+ \newline 
+=$\ket{0}_{A}\bigotimes(\ket{0}_{B}\bigotimes\ket{0}_{C}-(\ket{0}-\ket{1})_{B}\bigotimes\ket{1}_{C}) $
+\newline
+
+ but this vector non- biseparable in this cut.
+ 
+ 
+. \newline  \\
+$ \ket{\zeta}=\ket{\Psi}_{111}-\ket{\Psi}_{10\varepsilon}$
+\newline \\
+       $ =\ket{1}_{A}\bigotimes \ket{1}_{B}\bigotimes\ket{1}_{C} -\ket{1}_{A}\bigotimes (\ket{0})_{B}\bigotimes(\ket{0}+\ket{1})_{C} $
+ \newline \\
+ =$\ket{1}_{A}\bigotimes(\ket{1}_{B}\bigotimes\ket{1}_{C}-\ket{0}_{B}\bigotimes(\ket{0}+\ket{1})_{C}$
+ 
+.\newline \\
+similarly
+
+$ \ket{\eta}= \ket{\Psi}_{111}-\ket{\Psi}_{10\varepsilon^{-}}$
+\newline \\
+$ = \ket{1}_{A}\bigotimes \ket{1}_{B}\bigotimes\ket{1}_{C} -\ket{1}_{A}\bigotimes (\ket{0})_{B}\bigotimes(\ket{0}-\ket{1})_{C}$
+
+
+  .\newline \\
+  $ = \ket{1}_{A}\bigotimes(\ket{1}_{B}\bigotimes\ket{1}_{C}-\ket{0}_{B}\bigotimes(\ket{0}-\ket{1})_{C})$
+ 	
+ 	
+ 	.\newline \\
+ 	
+ 	
+ 
+ 	2).$B|AC$ cut
+ 	
+ 	$ \ket{\vartheta} = \ket{\Psi}_{000}-\ket{\Psi}_{10\varepsilon}$
+ 	.\newline \\
+ 	$ = \ket{0}_{A}\bigotimes \ket{0}_{B}\bigotimes\ket{0}_{C} -\ket{1}_{A}\bigotimes (\ket{0})_{B}\bigotimes(\ket{0}+\ket{1})_{C}$
+ 	\newline \\
+ 	$ = \ket{0}_{B}\bigotimes(\ket{0}_{A}\bigotimes\ket{0}_{C}-\ket{1}_{A}\bigotimes(\ket{0}+\ket{1})_{C})$
+ 	\newline \\
+ 	similarly,
+ 	\newline  \\
+ 	$ \ket{\kappa}= \ket{\Psi}_{000}-\ket{\Psi}_{10\varepsilon^{-}} $
+ 	\newline \\
+ 	$ =\ket{0}_{A}\bigotimes \ket{0}_{B}\bigotimes\ket{0}_{C}- \ket{1}_{A}\bigotimes (\ket{0})_{B}\bigotimes(\ket{0}-\ket{1})_{C}$
+ 	\newline \\
+ 	$ =\ket{0}_{B}\bigotimes(\ket{0}_{A}\bigotimes\ket{0}_{C}-\ket{1}_{A}\bigotimes(\ket{0}-\ket{1})_{C}) $
+ 	
+ 	.\newline \\
+ 	similarly
+ 	\newline \\
+ 	$ \ket{\lambda} =\ket{\Psi}_{111} - \ket{\Psi}_{\varepsilon10}$
+ 	\newline\\
+ 	
+ 	$ =\ket{1}_{A}\bigotimes \ket{1}_{B}\bigotimes\ket{1}_{C}- (\ket{0}+\ket{1})_{A}\bigotimes (\ket{1})_{B}\bigotimes\ket{0}_{C}$
+ 	\newline\\
+ 	$ =\ket{1}_{B} \bigotimes(\ket{1}_{A}\bigotimes\ket{1}_{C}-(\ket{0}+\ket{1})_{A}\bigotimes\ket{0}_{C})$
+ 	\newline \\
+ 	similarly
+ 	\newline \\
+ 	$ \ket{\nu} =\ket{\Psi}_{111} -  \ket{\Psi}_{\varepsilon^{-} 10}$
+ 	\newline \\
+ 	$ =\ket{1}_{A}\bigotimes \ket{1}_{B}\bigotimes\ket{1}_{C}- (\ket{0}-\ket{1})_{A}\bigotimes (\ket{1})_{B}\bigotimes\ket{0}_{C}$
+ 		\newline\\
+ 	$ =\ket{1}_{B} \bigotimes(\ket{1}_{A}\bigotimes\ket{1}_{C}-(\ket{0}-\ket{1})_{A}\bigotimes\ket{0}_{C})$
+ 	\newline \\
+ 	\newline\\
+ 	
+ 	3)$C|AB$ cut
+ 	
+ 	have same results
+ 	
+\end{document}
+

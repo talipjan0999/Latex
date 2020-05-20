@@ -1,0 +1,309 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{csquotes}
+\usepackage{anyfontsize}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\Huge\bfseries}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+\usepackage{blindtext}
+\usepackage{eso-pic}
+\usepackage{graphicx} 
+\graphicspath{{imagenes/}} 
+\usepackage{soul}
+\usepackage{tikz}
+
+\newcommand\ol[1]{{\setul{-1.7em}{}\ul{#1}}}
+
+\begin{document}
+\nocite{*}
+
+
+\begin{titlepage}
+
+\vspace*{0.5cm}
+\thispagestyle{empty}
+
+\begin{center}
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{c}
+ \Huge{\textbf{Universit\`{a} di Camerino}}
+\\
+\LARGE\textbf{Scuola  di  Scienze  e Tecnologie}
+\end{tabular}
+\renewcommand{\arraystretch}{-0.1}
+
+
+
+\vspace*{6cm}
+\begin{Huge}
+\textbf{THESIS TOPIC}
+\end{Huge}
+
+\vspace{6cm}
+\begin{huge}
+\textbf{NAME SURNAME}
+\end{huge}
+\end{center}
+
+
+
+\newpage
+\thispagestyle{empty}
+\vspace*{1cm}
+\begin{center}
+\Huge{\textbf{THESIS TOPIC}}
+
+\vspace*{1cm}
+\textit{
+\Large{Dissertation submitted in partial fulfillment\\ \vspace*{0.3cm} 
+of the requirements for the degree of} \\ \vspace*{0.3cm} 
+\huge{\textbf{Master's Degree}}\\\vspace*{0.1cm}
+\Large{in}\\ \vspace*{0.2cm}
+\huge{\textbf{MATHEMATICS}}\\
+\vspace*{0.5cm}
+\Large{by}\\
+\huge{\textbf{NAME SURNAME}}\\
+\vspace*{0.1cm}
+\Large{$(MATRICOLA_NUMBER)$}\\
+\vspace*{1cm}
+\Large{based on research carried out\\
+\vspace{0.3cm}
+under the supervision of}\\
+\vspace*{0.3cm}
+\huge{\textbf{Prof. NAME SURNAME}}\\
+\vspace*{0.3cm}
+\Large{and}\\
+\vspace*{0.3cm}
+\huge{\textbf{Prof. NAME SURNAME}}}
+\vspace*{3cm}
+\begin{center}
+\renewcommand{\arraystretch}{0.5}
+\begin{tabular}[t] {c}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{../90193137_2772054119574821_1729897648690823168_n}
+	\caption{}
+	\label{fig:9019313727720541195748211729897648690823168n}
+\end{figure}
+\huge{\textbf{Universit\`{a} di Camerino}} \\
+\LARGE\textbf{Scuola di Scienze e Tecnologie}
+\end{tabular}
+\end{center}
+\end{center}
+\end{titlepage}
+
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\vspace*{1cm}
+\huge{\textbf{Certificate of Examination}}
+\end{center}
+\vspace*{0.1cm}
+\begin{flushleft}
+\Large{Roll Number: MATRICOLA NUMBER\\
+Name: NAME SURNAME\\
+Title of Dissertation:THESIS TOPIC}
+\end{flushleft}
+\vspace*{0.3cm}
+\Large{We the below signed, after checking the dissertation mentioned above and the official record book (s) of the student, hereby state our approval of the dissertation submitted in partial fulfillment of the requirements of the \textit{Master's Degree} in \textit{Physics} at \textit{University of Camerino}. We are satisfied with the volume, quality, correctness, and originality of the work.}
+\vspace*{0.5cm}
+\renewcommand{\arraystretch}{0.5}
+\setlength{\tabcolsep}{30pt}
+\begin{center}
+\begin{tabular}{c c}
+\par\noindent\rule{6cm}{0.4pt} & \par\noindent\rule{6cm}{0.4pt}\\
+\LARGE{NAME SURNAME} & \LARGE{NAME SURNAME}\\
+\Large{Supervisor}  & \Large{Supervisor}
+\end{tabular}
+\end{center}
+
+
+\vspace*{0.5cm}
+\renewcommand{\arraystretch}{0.5}
+\setlength{\tabcolsep}{30pt}
+\begin{center}
+\begin{tabular}{c c}
+\par\noindent\rule{6cm}{0.5pt} & \par\noindent\rule{6cm}{0.5pt}\\
+\LARGE{Name Surname} & \LARGE{Name Surname}\\
+\Large{Member, DSC}  & \Large{External Examiner, DSC}
+\end{tabular}
+\end{center}
+\vspace*{0.5cm}
+\renewcommand{\arraystretch}{0.5}
+\setlength{\tabcolsep}{30pt}
+\begin{center}
+\begin{tabular}{c c}
+\par\noindent\rule{6cm}{0.5pt} & \par\noindent\rule{6cm}{0.5pt}\\
+\LARGE{Name Surname} & \LARGE{Name Surname}\\
+\Large{Chairperson, DSC}  & \Large{Head of the Department, DSC}
+\end{tabular}
+\end{center}
+\vspace*{0.5cm}
+\renewcommand{\arraystretch}{0.5}
+\setlength{\tabcolsep}{30pt}
+\begin{center}
+\begin{tabular}{c c}
+\par\noindent\rule{6cm}{0.5pt} & \par\noindent\rule{6cm}{0.5pt}\\
+\LARGE{Name Surname} & \LARGE{Name Surname}\\
+\Large{Member, DSC}  & \Large{Member, DSC}
+\end{tabular}
+\end{center}
+\vspace*{2cm}
+\begin{center}
+\renewcommand{\arraystretch}{0.5}
+
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\vspace*{1cm}
+\begin{flushleft}
+\LARGE{\textbf{Prof. NAME SURNAME}\\
+Professor\\
+\vspace*{0.5cm}
+\textbf{Prof. NAME SURNAME}\\
+Professor}
+\end{flushleft}
+
+\vspace*{0.7cm}
+\begin{flushright}
+\large{Month 00, 2020}
+\end{flushright}
+
+\vspace*{0.7cm}
+\begin{center}
+\huge{\textbf{Supervisor`s Certificate}}
+\end{center}
+
+\vspace*{1cm}
+\Large{This is to certify that the work presented in the dissertation entitled \textit{GR} submitted by \textit{YOUR NAME SURNAME} Roll Number "WRITE YOUR MATRICOLA NUMBER", is a record of original research carried out by him under our supervision and guidance in partial fulfillment of the requirements of the \textit{Master`s Degree} in \textit{Physics}. Neither this dissertation nor any part of it has been submitted earlier for any degree or diploma to any institute or university in Italy or abroad.}
+
+
+\vspace*{0.9cm}
+\renewcommand{\arraystretch}{0.5}
+\setlength{\tabcolsep}{30pt}
+\begin{center}
+\begin{tabular}{c c}
+\par\noindent\rule{6cm}{0.5pt} & \par\noindent\rule{6cm}{0.5pt}\\
+\LARGE{NAME SURNAME} & \LARGE{NAME SURNAME}\\
+\Large{Professor}  & \Large{Professor}
+\end{tabular}
+\end{center}
+
+\vspace*{3cm}
+\begin{center}
+\renewcommand{\arraystretch}{0.5}
+\begin{tabular}[t] {c}
+
+\huge{\textbf{Universit\`{a} di Camerino}} \\
+\LARGE\textbf{Scuola di Scienze e Tecnologie}
+\end{tabular}
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\vspace*{3cm}
+
+\begin{center}
+\Huge{\textbf{Dedication}}
+\end{center}
+
+
+\vspace*{10cm}
+\begin{flushright}
+\large{Signature}
+\end{flushright}
+
+
+
+
+\newpage
+\thispagestyle{empty}
+\vspace*{3cm}
+
+\begin{center}
+\Huge{\textbf{Declaration of Originality}}
+\end{center}
+
+\vspace*{0.8cm}
+\Large{I, Hajar Hajiyeva, Roll Number "WRITE YOUR MATRICOLA NUMBER" hereby declare that this dissertation entitled \textit{THESIS TOPIC} presents my original work carried out as as a Master's student of  UNICAM and, to the best of my knowledge, contains no material previously published or written by another person, nor any material presented by me for the award of any degree or diploma of UNICAM or any other institution. Any contribution made to this research by others, with whom I have worked at UNICAM or elsewhere, is explicitly acknowledged under the sections "Reference" or "Bibliography". I have also submitted my original research records to the scrutiny committee for evaluation of my dissertation.
+
+\vspace*{0.3cm}
+I am fully aware that in case of any non-compliance detected in future, the Committee of UNICAM may withdraw the degree awarded to me on the basis of the present dissertation.}
+
+
+\vspace*{0.5cm}
+\renewcommand{\arraystretch}{0.5}
+\setlength{\tabcolsep}{50pt}
+
+\vspace*{1cm}
+
+
+\Large{\noindent Month 00, 2020 \hfill \\ UNICAM \hfill  YOUR NAME SURNAME}
+
+
+
+\newpage
+\thispagestyle{empty}
+\vspace*{4cm}
+\begin{center}
+\begin{large}
+\Huge{\textbf{Acknowledgment}}
+\end{large}
+\end{center}
+ body of acknowledgement
+ 
+\vspace*{3cm}
+
+\Large{
+\noindent Month 00, 202    \hfill NAME SURNAME\\ 
+\setlength{\parskip}{1em}
+\noindent UNICAM \hfill  Roll Number: MATRICOLA NUMBER}
+
+\newpage
+\thispagestyle{empty}
+\begin{abstract}
+ABS
+\end{abstract}
+
+
+
+\pagenumbering{roman}
+\tableofcontents
+\addcontentsline{toc}{chapter}{Certificate of Examination}
+\addcontentsline{toc}{chapter}{Supervisors' Certificate}
+\addcontentsline{toc}{chapter}{Dedication}
+\addcontentsline{toc}{chapter}{Declaration of Originality}
+\addcontentsline{toc}{chapter}{Acknowledgment}
+\addcontentsline{toc}{chapter}{Abstract}
+\addcontentsline{toc}{chapter}{List of Figures}
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoffigures
+\listoftables
+
+
+\newpage
+\pagenumbering{arabic}
+\chapter{chapter1}
+\section{Section 1}
+\section{Section2}
+\end{document}

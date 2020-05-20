@@ -1,0 +1,1304 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+
+\title{The short presentation about UPB ,UBB,CES,GES}
+\author{talipjan}
+
+\begin{document}
+\newline
+case 1
+\newline \\
+$\ket{\Psi}_{0}=(x_{0}\ket{0}+y_{0}\ket{1})_{A}\otimes ((a_{0})^{00}\ket{00}+(a_{0})^{01}\ket{01}+(a_{0})^{10}\ket{10}+(a_{0})^{11}\ket{11})_{BC}$,
+\newline \\
+$\ket{\Psi}_{1}=(x_{1}\ket{0}+y_{1}\ket{1})_{A}\otimes ((a_{1})^{00}\ket{00}+(a_{1})^{01}\ket{01}+(a_{1})^{10}\ket{10}+(a_{1})^{11}\ket{11})_{BC}$,
+\newline \\
+$\ket{\Psi}_{2}=(x_{2}\ket{0}+y_{2}\ket{1})_{A}\otimes ((a_{2})^{00}\ket{00}+(a_{2})^{01}\ket{01}+(a_{2})^{10}\ket{10}+(a_{2})^{11}\ket{11})_{BC}$,
+\newline \\
+$\ket{\Psi}_{3}=(x_{3}\ket{0}+y_{3}\ket{1})_{A}\otimes((a_{3})^{00}\ket{00}+(a_{3})^{01}\ket{01}+(a_{3})^{10}\ket{10}+(a_{3})^{11}\ket{11})_{BC}$,
+\newline \\
+$\ket{\Psi}_{4}=\ket{0}_{B}\otimes(a_{4}^{00}\ket{00}+a_{4}^{11}\ket{11})_{AC}$
+\newline \\
+where $|x_{i}|^{2}+|y_{i}|^{2}=1     $ $       ,i=0,1,2,3,$,
+\newline \\
+$|(a_{i})^{00}|^{2}+|(a_{i})^{01}|^{2}+|(a_{i})^{10}|^{2}+|(a_{i})^{11}|^{2}=|a|^{2}+|b|^{2}=1     $,    $       ,i=0,1,2,3,$,
+\newline \\
+supposse above 5 vectors are pairly orthogonal,then the relations between the coefficients :
+ \\
+$\bra{\Psi_{i}}\ket{\Psi_{j}}=0        $  where  $i\neq j$   $     ,i=0,1,2,3,   j=0,1,2,3, $ 
+\newline \\
+$x_{i}=-y_{j}$  where  $i\neq j$   $     ,i=0,1,2,3,   j=0,1,2,3, $ 
+\newline \\
+$or  $ 
+\newline \\
+$(a_{i})^{00}(a_{j})^{00}+(a_{i})^{01}(a_{j})^{01}+(a_{i})^{10}(a_{j})^{10}+(a_{i})^{11}(a_{j})^{11}=0$,
+ \leavevmode
+\newline 
+ from the orthogonal conditions we could get:
+\\
+\newline \\
+$ \bra{\Psi}_{0}\ket{\Psi_{i}}=0 $ \ \ i=0,1,2,3
+\begin{equation}
+\bra{\Psi}_{0}\ket{\Psi}_{i}=0 \ \ \Rightarrow \begin{cases}
+x^{*}_{0}x_{1}=-y^{*}_{0}y_{1} & \\ x^{*}_{0}x_{2}=-y^{*}_{0}y_{2}  \\ \ \ x^{*}_{0}x_{3}=-y^{*}_{0}y_{3}   \ \ \ \ \ \ \ \ ,\\
+a_{0}^{00}a_{1}^{00}+a_{0}^{01}a_{1}^{01}+a_{0}^{10}a_{1}^{10}+a_{0}^{11}a_{1}^{11}=0   \\ a_{0}^{00}a_{2}^{00}+a_{0}^{01}a_{2}^{01}+a_{0}^{10}a_{2}^{10}+a_{0}^{11}a_{2}^{11}=0  \\ a_{0}^{00}a_{3}^{00}+a_{0}^{01}a_{3}^{01}+a_{0}^{10}a_{3}^{10}+a_{0}^{11}a_{3}^{11}=0  \\
+\end{cases}
+\end{equation}
+\\
+similarily,
+\newline \\
+\begin{equation}
+\begin{cases}
+\bra{\Psi}_{1}\ket{\Psi}_{2}=0  ,\\ \ \  \ \bra{\Psi}_{1}\ket{\Psi}_{3}=0 \\  \bra{\Psi}_{2}\ket{\Psi}_{3}=0
+\end{cases}
+ \ \ \Rightarrow  \begin{cases}
+x^{*}_{1}x_{2}=-y^{*}_{1}y_{2} & \\ x^{*}_{2}x_{3}=-y^{*}_{2}y_{3}  
+a_{1}^{00}a_{2}^{00}+a_{1}^{01}a_{2}^{01}+a_{1}^{10}a_{2}^{10}+a_{1}^{11}a_{2}^{11}=0   \\ a_{1}^{00}a_{3}^{00}+a_{1}^{01}a_{3}^{01}+a_{1}^{10}a_{1}^{10}+a_{1}^{11}a_{3}^{11}=0  \\ a_{2}^{00}a_{3}^{00}+a_{2}^{01}a_{3}^{01}+a_{2}^{10}a_{3}^{10}+a_{2}^{11}a_{3}^{11}=0  \\ 
+\end{cases}
+\end{equation}
+\newline \\
+\begin{equation}
+\bra{\Psi}_{4}\ket{\Psi}_{i}=0   \ \  \ \ \Rightarrow \begin{cases}
+x^{*}_{0}a_{0}^{00}a_{4}^{00}+y^{*}_{0}a_{0}^{01}a_{4}^{11}=0\\
+x^{*}_{1}a_{1}^{00}a_{4}^{00}+y^{*}_{1}a_{1}^{01}a_{4}^{11}=0 \\
+x^{*}_{2}a_{2}^{00}a_{4}^{00}+y^{*}_{2}a_{2}^{01}a_{4}^{11}=0\\
+x^{*}_{3}a_{3}^{00}a_{4}^{00}+y^{*}_{3}a_{3}^{01}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+
+muuu
+
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\Psi_{4}}=0 $       where     $ ,i=0,1,2,3,   $ 
+\leavevmode
+\newline  \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+\leavevmode
+\newline \\
+$\ket{\Psi}_{4}=a\ket{000}+b\ket{101}$
+\newline \\
+for orthogonality:
+\newline \\
+$a x_{i}(a_{i})^{00}+b y_{i}(a_{i})^{01}=0$
+\newline \\
+
+
+Finally we get following genreal result:
+ \begin{equation}
+ A = \begin{cases}
+x_{i}=-y_{j}        &  i\neq j   ,i=0,1,2,3,   j=0,1,2,3\\
+ a x_{i}(a_{i})^{00}+b y_{i}(a_{i})^{01}=0
+ \end{cases}
+ \end{equation}
+ \newline \\
+ \begin{equation}
+ B = \begin{cases}
+(a_{i})^{00}(a_{j})^{00}+(a_{i})^{01}(a_{j})^{01}+(a_{i})^{10}(a_{j})^{10}+(a_{i})^{11}(a_{j})^{11}=0        &  i\neq j   ,i=0,1,2,3,   j=0,1,2,3\\
+ a x_{i}(a_{i})^{00}+b y_{i}(a_{i})^{01}=0
+ \end{cases}
+ \end{equation}
+ \newline \\
+ \leavevmode
+ \newline \\
+ we have infinite solutions in case A of orthogonality,but we have to prove  is  there a vector  $\ket{\zeta}$ which is  let (1) ,(2) dont have  any solution .
+ \newline \\
+$(i)    :$ Assume we have a vector $\ket{\zeta}=(x_{4}\ket{0}+y_{4}\ket{1})_{A}\otimes ((a_{4})^{00}\ket{00}+(a_{4})^{01}\ket{01}+(a_{4})^{10}\ket{10}+(a_{4})^{11}\ket{11})_{BC}$,   ( $      A|BC    $cut   )
+ 
+ \leavevmode
+\newline \\
+we get same result :
+\begin{equation}
+C = \begin{cases}
+x_{i}=-y_{j}        &  i\neq j   ,i=0,1,2,3, 4 $. $ j=0,1,2,3,4\\
+a x_{i}(a_{i})^{00}+b y_{i}(a_{i})^{01}=0
+\end{cases}
+\end{equation}
+ \newline \\
+\begin{equation}
+D = \begin{cases}
+(a_{i})^{00}(a_{j})^{00}+(a_{i})^{01}(a_{j})^{01}+(a_{i})^{10}(a_{j})^{10}+(a_{i})^{11}(a_{j})^{11}=0        &  i\neq j   ,i=0,1,2,3,4  $ ,$ j=0,1,2,3,4\\
+a x_{i}(a_{i})^{00}+b y_{i}(a_{i})^{01}=0
+\end{cases}
+\end{equation}
+easy to see that (3),(4)also have infinite solutions. 
+\leavevmode
+ \newline \\
+ $(ii)   :$Assume we have a vector $\ket{\zeta}=(x_{4}\ket{0}+y_{4}\ket{1})_{B}\otimes ((a_{4})^{00}\ket{00}+(a_{4})^{01}\ket{01}+(a_{4})^{10}\ket{10}+(a_{4})^{11}\ket{11})_{AC}$,   ( $      B|AC    $  cut   )
+ \newline \\
+ In $\bra{\zeta}\ket{\Psi}_{i}   ,                  $    $    i=0,1,2,3.$
+ \newline \\
+ $\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{010}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$   , i=0,1,2,3
+ \newline \\
+ $\ket{\zeta}=x_{4}(a_{4})^{00}\ket{000}+x_{4}(a_{4})^{01}\ket{001}+x_{4}(a_{4})^{10}\ket{100}+x_{4}(a_{4})^{11}\ket{101}+y_{4}(a_{4})^{00}\ket{010}+y_{4}(a_{4})^{01}\ket{011}+y_{4}(a_{4})^{10}\ket{110}+y_{4}(a_{4})^{11}\ket{111}$
+ \newline \\
+ we  will get 
+ \newline \\
+ $x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+x_{i}(a_{i})^{01}x_{4}(a_{4})^{01}+x_{i}(a_{i})^{10}y_{4}(a_{4})^{00}+x_{i}(a_{i})^{11}y_{4}(a_{4})^{01}+y_{i}(a_{i})^{00}y_{4}(a_{i})^{01}+y_{i}(a_{i})^{01}x_{4}(a_{4})^{11}+y_{4}(a_{4})^{10}y_{i}(a_{i})^{10}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{11}=0$  
+  $   ,  i=0,1,2,3  $            $ .     (5) $ 
+  \leavevmode
+  \newline \\
+  $\bra{\zeta}\ket{\Psi_{4}}$
+  \newline \\
+  $\ket{\Psi}_{4}=a\ket{000}+b\ket{101}$
+  \newline \\
+  $\ket{\zeta}=x_{4}(a_{4})^{00}\ket{000}+x_{4}(a_{4})^{01}\ket{001}+x_{4}(a_{4})^{10}\ket{100}+x_{4}(a_{4})^{11}\ket{101}+y_{4}(a_{4})^{00}\ket{010}+y_{4}(a_{4})^{01}\ket{011}+y_{4}(a_{4})^{10}\ket{110}+y_{4}(a_{4})^{11}\ket{111}$
+  \newline \\
+  $x_{4}(a_{4})^{00}a+bx_{4}(a_{4})^{11}=0$ $
+  ,  (6)$
+  \newline \\
+  
+   \begin{equation}
+ we  have
+  ,  \begin{cases}
+  x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+x_{i}(a_{i})^{01}\\x_{4}(a_{4})^{01}+x_{i}(a_{i})^{10}y_{4}(a_{4})^{00}+x_{i}(a_{i})^{11}y_{4}(a_{4})^{01}+y_{i}(a_{i})^{00}y_{4}(a_{i})^{01}\\+y_{i}(a_{i})^{01}x_{4}(a_{4})^{11}+y_{4}(a_{4})^{10}y_{i}(a_{i})^{10}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{11}=0
+    &   ,i=0,1,2,3.  (5)  \\
+  x_{4}(a_{4})^{00}a+bx_{4}(a_{4})^{11}=0 
+  ,  (6)
+  \end{cases}
+  \end{equation}
+  \leavevmode
+  \newline \\
+   $(iii)   :$Assume we have a vector
+ $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{C}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AB}$,   ( $      C|AB    $  cut   )
+ \newline \\
+ $\ket{\zeta}=x_{5}(a_{5})^{00}\ket{000}+x_{5}(a_{5})^{01}\ket{010}+x_{5}(a_{5})^{10}\ket{100}+x_{5}(a_{5})^{11}\ket{110}+y_{5}(a_{5})^{00}\ket{001}+y_{5}(a_{5})^{01}\ket{011}+y_{5}(a_{5})^{10}\ket{101}+y_{5}(a_{5})^{11}\ket{111}$
+ \newline \\
+ $\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{010}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$   , i=0,1,2,3
+ \newline \\
+\newline \\
+In $\bra{\zeta}\ket{\Psi}_{i}   ,                  $    $    i=0,1,2,3.$
+\newline \\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x_{5}(a_{5})^{01}+x_{5}(a_{5})^{10}y_{i}(a_{i})^{00}+x_{5}(a_{5})^{11}y_{i}(a_{i})^{10}+y_{5}(a_{5})^{00}x_{i}(a_{i})^{01}+y_{5}(a_{5})^{01}x_{i}(a_{i})^{11}+y_{5}(a_{5})^{10}y_{i}(a_{i})^{01}+y_{5}(a_{5})^{11}y_{i}(a_{i})^{11}=0$    $  ,(7)  $
+\newline \\
+$\bra{\zeta}\ket{\Psi_{4}}$
+ \newline \\
+$\ket{\Psi}_{4}=a\ket{000}+b\ket{101}$
+ \newline \\
+$\ket{\zeta}=x_{5}(a_{5})^{00}\ket{000}+x_{5}(a_{5})^{01}\ket{010}+x_{5}(a_{5})^{10}\ket{100}+x_{5}(a_{5})^{11}\ket{110}+y_{5}(a_{5})^{00}\ket{001}+y_{5}(a_{5})^{01}\ket{011}+y_{5}(a_{5})^{10}\ket{101}+y_{5}(a_{5})^{11}\ket{111}$
+\newline \\
+$x_{5}(a_{5})^{00}a+by_{5}(a_{5})^{10}=0$ $
+,  (8)$
+\newline \\
+we could get 
+\begin{equation}
+we  have
+\begin{cases}
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x_{5}(a_{5})^{01}+x_{5}(a_{5})^{10}y_{i}(a_{i})^{00}+\\x_{5}(a_{5})^{11}y_{i}(a_{i})^{10}+y_{5}(a_{5})^{00}x_{i}(a_{i})^{01}+y_{5}(a_{5})^{01}x_{i}(a_{i})^{11}+\\y_{5}(a_{5})^{10}y_{i}(a_{i})^{01}+y_{5}(a_{5})^{11}y_{i}(a_{i})^{11}=0   & i=0,1,2,3  (7)  \\
+x_{5}(a_{5})^{00}a+by_{5}(a_{5})^{10}=0$ $
+,  (8)
+\end{cases}
+\end{equation}
+
+
+
+
+\leavevmode
+\newline \\
+
+
+
+
+
+case 2.
+\newline \\
+$\ket{\Psi}_{i}=(x_{i}\ket{0}+y_{i}\ket{1})_{A}\otimes ((a_{i})^{00}\ket{00}+(a_{i})^{01}\ket{01}+(a_{i})^{10}\ket{10}+(a_{i})^{11}\ket{11})_{BC}     $  $ i=0,1,2$,
+\newline \\
+$\ket{\Psi}_{3}=(x_{3}\ket{0}+y_{3}\ket{1})_{B}\otimes((a_{3})^{00}\ket{00}+(a_{3})^{01}\ket{01}+(a_{3})^{10}\ket{10}+(a_{3})^{11}\ket{11})_{AC}$,
+\newline \\
+$\ket{\Psi}_{4}=x_{4}\ket{0}_{B}\otimes((a_{3})^{00}\ket{00}+(a_{3})^{01}\ket{01}+(a_{3})^{10}\ket{10}+(a_{3})^{11}\ket{11})_{AC}$,
+
+where $|x_{i}|^{2}+|y_{i}|^{2}=1     $ $       ,i=0,1,2,3,$,
+\newline \\
+$|(a_{i})^{00}|^{2}+|(a_{i})^{01}|^{2}+|(a_{i})^{10}|^{2}+|(a_{i})^{11}|^{2}=|a|^{2}+|b|^{2}=1     $,    $       ,i=0,1,2,3,$,
+\newline \\
+supposse above 5 vectors are pairly orthogonal,then the relations between the coefficients :
+\newline \\
+$\bra{\Psi_{i}}\ket{\Psi_{j}}=0        $  where  $i\neq j$   $     ,i=0,1,2,3,   j=0,1,2,3, $ 
+\newline \\
+$x_{i}=-y_{j}$  where  $i\neq j$   $     ,i=0,1,2   j=0,1,2, $ 
+\newline \\
+$or  $ 
+\newline \\
+$(a_{i})^{00}(a_{j})^{00}+(a_{i})^{01}(a_{j})^{01}+(a_{i})^{10}(a_{j})^{10}+(a_{i})^{11}(a_{j})^{11}=0$,
+\leavevmode
+\newline 
+
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\Psi_{3}}=0 $       where     $ ,i=0,1,2   $ 
+\leavevmode
+\newline \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+
+$\bra{\Psi_{i}}\ket{\Psi_{4}}=0 $       where     $ ,i=0,1,2   $ 
+\newline \\
+$\ket{\Psi}_{3}=x_{3}(a_{3})^{00}\ket{000}_{ABC}+x_{3}(a_{3})^{01}\ket{001}_{ABC}+x_{3}(a_{3})^{10}\ket{100}_{ABC}+x_{3}(a_{3})^{11}\ket{101}_{ABC}+y_{3}(a_{3})^{00}\ket{010}_{ABC}+y_{3}(a_{3})^{01}\ket{011}_{ABC}+y_{3}(a_{3})^{10}\ket{110}_{ABC}+y_{3}(a_{3})^{11}\ket{111}_{ABC}$
+\newline \\
+from orthognality ,we could get
+\newline \\
+$  x_{i}(a_{i})^{00}x_{3}(a_{3})^{00}+x_{i}(a_{i})^{01}x_{3}(a_{3})^{01}+x_{i}(a_{i})^{10}x_{3}(a_{3})^{10}+x_{i}(a_{i})^{11}x_{3}(a_{3})^{11}+y_{i}(a_{i})^{00}y_{3}(a_{3})^{00}+y_{i}(a_{i})^{01}y_{3}(a_{3})^{01}+y_{i}(a_{i})^{10}y_{3}(a_{3})^{10}+y_{i}(a_{i})^{11}y_{3}(a_{3})^{11}=0$ where i=0,1,2
+
+
+
+
+\leavevmode
+\newline \\
+
+
+\leavevmode
+\newline  \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+\leavevmode
+\newline \\
+$\ket{\Psi}_{4}=x_{4}(a_{4})^{00}\ket{000}+y_{4}(a_{4})^{01}\ket{111}$
+\newline \\
+for orthogonality:
+\newline \\
+$a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0$
+\newline \\
+$\bra{\Psi_{3}}\ket{\Psi_{4}}=0 $ 
+\newline \\
+$x_{3}a_{3}^{00}x_{4}a_{4}^{00}+x_{3}a_{3}^{11}x_{4}a_{4}^{11}=0$
+
+Finally we get following genreal result:
+\begin{equation}
+E = \begin{cases}
+x_{i}=-y_{j}        &  i\neq j   ,i=0,1,2   j=0,1,2\\
+a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{i}(a_{i})^{00}x_{3}(a_{3})^{00}+x_{i}(a_{i})^{01}x_{3}(a_{3})^{01}+x_{i}(a_{i})^{10}x_{3}\\
+(a_{3})^{10}+x_{i}(a_{i})^{11}x_{3}(a_{3})^{11}+y_{i}(a_{i})^{00}y_{3}(a_{3})^{00}+\\
+y_{i}(a_{i})^{01}y_{3}(a_{3})^{01}+y_{i}(a_{i})^{10}y_{3}(a_{3})^{10}+y_{i}(a_{i})^{11}y_{3}\\
+(a_{3})^{11}=0  where i=0,1,2
+\newline\\
+x_{3}a_{3}^{00}x_{4}a_{4}^{00}+x_{3}a_{3}^{11}x_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\newline \\
+\begin{equation}
+F = \begin{cases}
+(a_{i})^{00}(a_{j})^{00}+(a_{i})^{01}(a_{j})^{01}+(a_{i})^{10}(a_{j})^{10}+(a_{i})^{11}\\
+(a_{j})^{11}=0
+\newline \\
+a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{i}(a_{i})^{00}x_{3}(a_{3})^{00}+x_{i}(a_{i})^{01}x_{3}(a_{3})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{3})^{10}+x_{i}(a_{i})^{11}x_{3}(a_{3})^{11}+y_{i}(a_{i})^{00}y_{3}(a_{3})^{00}+\\
+y_{i}(a_{i})^{01}y_{3}(a_{3})^{01}+y_{i}(a_{i})^{10}y_{3}(a_{3})^{10}+y_{i}(a_{i})^{11}\\
+y_{3}(a_{3})^{11}=0  where i=0,1,2
+\newline\\
+x_{3}a_{3}^{00}x_{4}a_{4}^{00}+x_{3}a_{3}^{11}x_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\newline \\
+\leavevmode
+\newline \\
+we have infinite solutions in case E of orthogonality,but we have to prove  is  there a vector  $\ket{\zeta}$ which is  let (7) ,(8) dont have  any solution .
+\newline \\
+$(i)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{A}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{BC}$,   ( $      A|BC    $cut   )
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\begin{equation}
+C = \begin{cases}
+x_{i}=-y_{5}    (  y_{i}=-x_{5})        &  i\neq j   ,i=0,1,2 $. $ j=0,1,2\\
+\newline \\
+
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  where i=0,1,2
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{3}}\ket{\zeta}=0 $
+\newline \\
+$x_{3}(a_{3})^{00}x_{5}(a_{5})^{00}+x_{3}(a_{3})^{01}x_{5}(a_{5})^{01}+x_{3}(a_{3})^{10}\\
+x_{5}(a_{5})^{10}+x_{3}(a_{3})^{11}x_{5}(a_{5})^{11}+y_{3}(a_{3})^{00}y_{5}(a_{5})^{00}+\\
+y_{3}(a_{3})^{01}y_{5}(a_{5})^{01}+y_{3}(a_{3})^{10}y_{5}(a_{5})^{10}+y_{3}(a_{3})^{11}\\
+y_{5}(a_{5})^{11}=0 \newline 
+ where i=0,1,2.$
+ \newline \\
+ $\bra{\Psi_{4}}\ket{\zeta}=0 $
+ \newline \\
+ $x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0$
+ \leavevmode
+ \newline \\
+ new ,we have to consider folowing system whether have solution or not 
+ \begin{equation}
+ D=\begin{cases}
+ \newline \\
+ x_{i}=-y_{5}    (  y_{i}=-x_{5})        &  i\neq j   ,i=0,1,2 $. $ j=0,1,2\\
+ \newline 
+ x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}x_{3}
+ (a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0  where i=0,1,2
+ \newline \\
+ x_{3}(a_{3})^{00}x_{5}(a_{5})^{00}+x_{3}(a_{3})^{01}x_{5}(a_{5})^{01}+x_{3}(a_{3})^{10}x_{5}(a_{5})^{10}+x_{3}(a_{3})^{11}x_{5}(a_{5})^{11}+y_{3}(a_{3})^{00}\\y_{5}(a_{5})^{00}+y_{3}(a_{3})^{01}y_{5}(a_{5})^{01}+y_{3}(a_{3})^{10}y_{5}(a_{5})^{10}+y_{3}(a_{3})^{11}y_{5}(a_{5})^{11}=0
+ \newline\\
+ x_{4}a_{4}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+ \end{cases}	
+ \end{equation}
+
+
+
+
+
+
+
+
+
+\leavevmode\\
+\newline \\
+$(ii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{B}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AC}$,   ( $      B|AC    $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+  where i=0,1,2
+\newline \\
+$\bra{\Psi_{3}}\ket{\zeta}=0 $
+\newline \\
+\begin{equation}
+C = \begin{cases}
+x_{3}=-y_{5}    (  y_{3}=-x_{5})        &  
+\newline \\
+
+x_{3}(a_{3})^{00}x_{5}(a_{5})^{00}+x_{3}(a_{3})^{01}x_{5}(a_{5})^{01}+x_{3}(a_{3})^{10}x_{3}(a_{5})^{10}+x_{3}(a_{3})^{11}x_{5}(a_{5})^{11}+\\y_{3}(a_{3})^{00}y_{5}(a_{5})^{00}+y_{3}(a_{3})^{01}y_{5}(a_{5})^{01}+y_{3}(a_{3})^{10}y_{5}(a_{5})^{10}+y_{3}(a_{3})^{11}y_{5}(a_{5})^{11}=0  where i=0,1,2
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}\\+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0  
+ .where , i=0,1,2
+\newline \\
+x_{3}=-y_{5}    (  y_{3}=-x_{5})        &  
+\newline \\
+
+x_{3}(a_{3})^{00}x_{5}(a_{5})^{00}+x_{3}(a_{3})^{01}x_{5}(a_{5})^{01}+x_{3}(a_{3})^{10}x_{3}\\(a_{5})^{10}+x_{3}(a_{3})^{11}x_{5}(a_{5})^{11}+y_{3}(a_{3})^{00}y_{5}(a_{5})^{00}+\\y_{3}(a_{3})^{01}y_{5}(a_{5})^{01}+y_{3}(a_{3})^{10}y_{5}(a_{5})^{10}+y_{3}(a_{3})^{11}y_{5}(a_{5})^{11}=0  where i=0,1,2
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+$(iii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{C}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AB}$,   ( $      C|AB   $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}y{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}(a_{5})^{10}+y_{i}(a_{i})^{01}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1,2
+\newline \\
+$\bra{\Psi_{3}}\ket{\zeta}=0 $
+\leavevmode
+\newline \\
+$x_{3}(a_{3})^{00}x_{5}(a_{5})^{00}+y_{3}(a_{3})^{00}x_{5}(a_{5})^{01}+x_{3}(a_{3})^{10}x_{5}(a_{5})^{10}+y_{3}(a_{3})^{10}x_{5}(a_{5})^{11}+\\x_{3}(a_{3})^{01}y_{5}(a_{5})^{00}+x_{3}(a_{3})^{11}y_{5}(a_{5})^{10}+y_{3}a_{3}^{01}y_{5}a_{5}^{01}+^{}y_{3}(a_{3})^{11}y_{5}(a_{5})^{11}=0 .$ where i=0,1,2
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}y{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}(a_{5})^{10}+y_{i}(a_{i})^{01}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{10}\\x_{5}(a_{5})^{11}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0   &  where i=0,1,2
+\newline \\
+
+x_{3}(a_{3})^{00}x_{5}(a_{5})^{00}+y_{3}(a_{3})^{00}x_{5}(a_{5})^{01}+x_{3}(a_{3})^{10}x_{5}(a_{5})^{10}+y_{3}(a_{3})^{10}x_{5}(a_{5})^{11}+\\x_{3}(a_{3})^{01}y_{5}(a_{5})^{00}+x_{3}(a_{3})^{11}y_{5}(a_{5})^{10}+y_{3}a_{3}^{01}y_{5}a_{5}^{01}+^{}y_{3}(a_{3})^{11}y_{5}(a_{5})^{11}=0  
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+
+
+
+\leavevmode\\
+\newline\\
+case 3
+\newline \\
+$\ket{\Psi}_{i}=(x_{i}\ket{0}+y_{i}\ket{1})_{A}\otimes ((a_{i})^{00}\ket{00}+(a_{i})^{01}\ket{01}+(a_{i})^{10}\ket{10}+(a_{i})^{11}\ket{11})_{BC}     $  $where $ i=0,1$  $
+\newline \\
+$\ket{\Psi}_{k}=(x_{k}\ket{0}+y_{k}\ket{1})_{B}\otimes((a_{k})^{00}\ket{00}+(a_{k})^{01}\ket{01}+(a_{k})^{10}\ket{10}+(a_{k})^{11}\ket{11})_{AC}$, where k=2,3
+\newline \\
+$\ket{\Psi}_{4}=x_{4}\ket{0}_{B}\otimes((a_{3})^{00}\ket{00}+(a_{3})^{01}\ket{01}+(a_{3})^{10}\ket{10}+(a_{3})^{11}\ket{11})_{AC}$,
+
+where $|x_{i}|^{2}+|y_{i}|^{2}=1     $ $       ,i=0,1,2,3,$,
+\newline \\
+$|(a_{i})^{00}|^{2}+|(a_{i})^{01}|^{2}+|(a_{i})^{10}|^{2}+|(a_{i})^{11}|^{2}=|a|^{2}+|b|^{2}=1     $,    $       ,i=0,1,2,3,$,
+\newline \\
+supposse above 5 vectors are pairly orthogonal,then the relations between the coefficients :
+\newline \\
+$\bra{\Psi_{0}}\ket{\Psi_{1}}=0        $ 
+\newline \\
+$x_{0}=-y_{1}(y_{0}=-x_{1})$  
+\newline \\
+$or  $ 
+\newline \\
+$(a_{0})^{00}(a_{1})^{00}+(a_{0})^{01}(a_{1})^{01}+(a_{0})^{10}(a_{1})^{10}+(a_{0})^{11}(a_{1})^{11}=0$
+\leavevmode
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\Psi_{k}}=0 $       where     $ ,i=0,1  ,k=2,3   $ 
+\leavevmode
+\newline \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+\newline \\
+$\ket{\Psi}_{k}=x_{k}(a_{k})^{00}\ket{000}_{ABC}+x_{k}(a_{k})^{01}\ket{001}_{ABC}+x_{k}(a_{k})^{10}\ket{100}_{ABC}+x_{k}(a_{k})^{11}\ket{101}_{ABC}+y_{k}(a_{k})^{00}\ket{010}_{ABC}+y_{k}(a_{k})^{01}\ket{011}_{ABC}+y_{k}(a_{k})^{10}\ket{110}_{ABC}+y_{k}(a_{k})^{11}\ket{111}_{ABC}$
+\newline \\
+from orthognality ,we could get
+\newline \\
+$  x_{i}(a_{i})^{00}x_{k}(a_{k})^{00}+x_{i}(a_{i})^{01}x_{k}(a_{k})^{01}+x_{i}(a_{i})^{10}x_{k}(a_{k})^{10}+x_{i}(a_{i})^{11}x_{k}(a_{k})^{11}+y_{i}(a_{i})^{00}y_{k}(a_{k})^{00}+y_{i}(a_{i})^{01}y_{k}(a_{k})^{01}+y_{i}(a_{i})^{10}y_{k}(a_{k})^{10}+y_{i}(a_{i})^{11}y_{k}(a_{k})^{11}=0$ where i=0,1,2
+
+
+
+\leavevmode\\
+\newline \\
+$\bra{\Psi_{i}}\ket{\Psi_{4}}=0 $       where     $ ,i=0,1,2   $ 
+\leavevmode
+\newline  \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+\leavevmode
+\newline \\
+$\ket{\Psi}_{4}=x_{4}(a_{4})^{00}\ket{000}+y_{4}(a_{4})^{01}\ket{111}$
+\newline \\
+for orthogonality:
+\newline \\
+$a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0$
+\newline \\
+$\bra{\Psi_{k}}\ket{\Psi_{4}}=0 $  where k=2,3
+\newline \\
+$x_{k}a_{k}^{00}x_{4}a_{4}^{00}+x_{k}a_{k}^{11}x_{4}a_{4}^{11}=0$
+
+Finally we get following genreal result:
+\begin{equation}
+E = \begin{cases}
+x_{0}=-y_{1}  (y_{0}=-x_{1} )      &  \\
+
+\newline \\
+x_{i}(a_{i})^{00}x_{k}(a_{k})^{00}+x_{i}(a_{i})^{01}x_{k}(a_{k})^{01}+x_{i}(a_{i})^{10}\\x_{k}(a_{k})^{10}+x_{i}(a_{i})^{11}x_{k}(a_{k})^{11}+y_{i}(a_{i})^{00}y_{k}(a_{k})^{00}+\\y_{i}(a_{i})^{01}y_{k}(a_{k})^{01}+y_{i}(a_{i})^{10}y_{k}(a_{k})^{10}+y_{i}(a_{i})^{11}y_{k}(a_{k})^{11}=0  
+, where i=0,1,k=2,3
+\newline\\
+a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{k}a_{k}^{00}x_{4}a_{4}^{00}+x_{k}a_{k}^{11}x_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\newline \\
+\begin{equation}
+F = \begin{cases}
+(a_{0})^{00}(a_{1})^{00}+(a_{0})^{01}(a_{1})^{01}+(a_{0})^{10}(a_{1})^{10}+(a_{0})^{11}(a_{1})^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{k}(a_{k})^{00}+x_{i}(a_{i})^{01}x_{k}(a_{k})^{01}+x_{i}(a_{i})^{10}\\x_{k}(a_{k})^{10}+x_{i}(a_{i})^{11}x_{k}(a_{k})^{11}+y_{i}(a_{i})^{00}y_{k}(a_{k})^{00}+\\y_{i}(a_{i})^{01}y_{k}(a_{k})^{01}+y_{i}(a_{i})^{10}y_{k}(a_{k})^{10}+y_{i}(a_{i})^{11}y_{k}(a_{k})^{11}=0  
+, where i=0,1,k=2,3
+\newline\\
+a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{k}a_{k}^{00}x_{4}a_{4}^{00}+x_{k}a_{k}^{11}x_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\newline \\
+\leavevmode
+\newline \\
+we have infinite solutions in case E of orthogonality,but we have to prove  is  there a vector  $\ket{\zeta}$ which is  let (14) ,(15) dont have  any solution .
+\newline \\
+$(i)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{A}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{BC}$,   ( $      A|BC    $cut   )
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\begin{equation}
+C = \begin{cases}
+x_{i}=-y_{5}    (  y_{i}=-x_{5})        &   ,i=0,1\\
+\newline \\
+
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  
+,    i=0,1
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $
+\newline \\
+$x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3$
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}=-y_{5}    (  y_{i}=-x_{5})      ,i=0,1
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0
+\end{cases}	
+\end{equation}
+\begin{equation}
+E=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  
+,    i=0,1
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0
+\end{cases}	
+\end{equation}
+
+
+
+
+
+
+
+
+\leavevmode\\
+\newline \\
+$(ii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{B}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AC}$,   ( $      B|AC    $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $ where k=2,3
+\newline \\
+\begin{equation}
+C = \begin{cases}
+x_{k}=-y_{5}    (  y_{k}=-x_{5})        & k=2,3
+\newline \\
+
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{k}=-y_{5}    (  y_{k}=-x_{5}),  k=2,3
+\newline \\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+\begin{equation}
+E=\begin{cases}
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline \\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+$(iii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{C}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AB}$,   ( $      C|AB   $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ , i=0,1
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+x_{i}(a_{i})^{01}y_{5}(a_{5})^{00}+x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1,2
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $ ,k=2,3
+\leavevmode
+\newline \\
+$x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}y_{5}(a_{5})^{00}+x_{k}(a_{k})^{10}x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}y_{5}(a_{5})^{10}+\\y_{k}(a_{k})^{00}x_{5}(a_{5})^{01}+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}a_{k}^{10}x_{5}a_{5}^{11}+^{}y_{k}(a_{k})^{11}y_{5}(a_{5})^{11}=0 .$ where k=2,3
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}\\(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+x_{i}(a_{i})^{01}y_{5}(a_{5})^{00}+\\x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0 ,i=0,1
+\newline \\
+
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}y_{5}(a_{5})^{00}+x_{k}(a_{k})^{10}x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}y_{5}(a_{5})^{10}+\\y_{k}(a_{k})^{00}x_{5}(a_{5})^{01}+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}a_{k}^{10}x_{5}a_{5}^{11}+^{}y_{k}(a_{k})^{11}y_{5}(a_{5})^{11}=0 ,k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+
+
+
+
+
+
+
+
+\leavevmode\\
+\newline \\
+case 5;
+\newline\\
+$\ket{\Psi}_{0}=(x_{0}\ket{0})_{B}\otimes ((a_{0})^{00}\ket{00}+(a_{i})^{11}\ket{11})_{AC}$
+\newline \\
+$\ket{\Psi}_{1}=(x_{1}\ket{0}+y_{1}\ket{1})_{C}\otimes ((a_{1})^{00}\ket{00}+(a_{1})^{01}\ket{01}+(a_{1})^{10}\ket{10}+(a_{1})^{11}\ket{11})_{AB}$
+\newline \\
+$\ket{\Psi}_{i}=(x_{i}\ket{0}+y_{i}\ket{1})_{B}\otimes ((a_{i})^{00}\ket{00}+(a_{i})^{01}\ket{01}+(a_{i})^{10}\ket{10}+(a_{i})^{11}\ket{11})_{AC}     $  $where $ i=2,3$   $
+\newline \\
+$\ket{\Psi}_{4}=x_{4}\ket{0}_{A}\otimes((a_{4})^{00}\ket{00}+(a_{4})^{01}\ket{01}+(a_{4})^{10}\ket{10}+(a_{4})^{11}\ket{11})_{BC}$,
+\newline \\
+$|(a_{i})^{00}|^{2}+|(a_{i})^{01}|^{2}+|(a_{i})^{10}|^{2}+|(a_{i})^{11}|^{2}=1     $,    $       ,i=0,1,2,3,$,
+\newline \\
+supposse above 5 vectors are pairly orthogonal,then the relations between the coefficients :
+\newline \\
+$\bra{\Psi_{0}}\ket{\Psi_{1}}=0        $ 
+\newline \\
+$  x_{0}(a_{0})^{00}x_{1}(a_{1})^{00}+x_{0}(a_{0})^{01}y_{1}(a_{1})^{00}+x_{0}(a_{0})^{10}x_{1}(a_{1})^{10}+x_{0}(a_{0})^{11}y_{1}(a_{1})^{10}=0$
+\leavevmode
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\Psi_{0}}=0 $       where     $ ,i=2,3   $ 
+\leavevmode
+\newline \\
+$  x_{0}(a_{0})^{00}x_{i}(a_{i})^{00}+x_{0}(a_{0})^{01}x_{i}(a_{i})^{01}+x_{0}(a_{0})^{10}x_{i}(a_{i})^{10}+x_{0}(a_{0})^{11}x_{i}(a_{i})^{11}=0$
+\newline \\
+\newline \\
+$\bra{\Psi_{i}}\ket{\Psi_{1}}=0 $     
+\newline \\
+  where     $ ,i=2,3  . $ 
+from orthognality ,we could get
+\newline \\
+$  x_{1}(a_{1})^{00}x_{i}(a_{i})^{00}+x_{1}(a_{1})^{01}y_{i}(a_{i})^{00}+x_{1}(a_{1})^{10}x_{i}(a_{i})^{10}+x_{1}(a_{1})^{11}y_{i}(a_{i})^{10}+y_{1}(a_{1})^{00}x_{i}(a_{i})^{01}+y_{1}(a_{1})^{01}y_{i}(a_{i})^{01}+y_{1}(a_{1})^{10}x_{i}(a_{i})^{11}+y_{1}(a_{1})^{11}y_{i}(a_{i})^{11}=0$ where i=2,3
+
+
+
+\leavevmode\\
+\newline \\
+$\bra{\Psi_{i}}\ket{\Psi_{4}}=0 $       where     $ ,i=2,3   $ 
+\newline \\
+$  x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+x_{i}(a_{i})^{01}x_{4}(a_{4})^{01}+x_{i}(a_{i})^{10}y_{4}(a_{4})^{00}+x_{i}(a_{i})^{11}y_{4}(a_{4}^{01}+y_{i}(a_{i})^{00}x_{4}(a_{4})^{10}+y_{i}(a_{i})^{01}x_{4}(a_{4})^{11}+y_{i}(a_{i})^{10}y_{4}(a_{4})^{10}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{11}=0$ where i=2,3
+\newline \\
+$\bra{\Psi_{0}}\ket{\Psi_{4}}=0 $        
+\newline 
+$  x_{0}(a_{0})^{00}x_{4}(a_{4})^{00}+x_{0}(a_{0})^{01}x_{4}(a_{4})^{01}+x_{0}(a_{0})^{10}y_{4}(a_{4})^{00}+x_{0}(a_{0})^{11}y_{4}(a_{4})^{01}=0$
+\newline \\
+$\bra{\Psi_{1}}\ket{\Psi_{4}}=0 $    
+\newline
+$  x_{1}(a_{1})^{00}x_{4}(a_{4})^{00}+x_{1}(a_{1})^{01}x_{4}(a_{4})^{10}+x_{1}(a_{1})^{10}y_{4}(a_{4})^{00}+x_{1}(a_{1})^{11}y_{4}(a_{4}^{10}+y_{1}(a_{1})^{00}x_{4}(a_{4})^{11}+y_{1}(a_{1})^{01}x_{4}(a_{4})^{11}+y_{1}(a_{1})^{10}y_{4}(a_{4})^{01}+y_{1}(a_{1})^{11}y_{4}(a_{4})^{11}=0$ where i=2,3
+\newline \\
+\newline
+Finally we get following genreal result:
+\begin{equation}
+E = \begin{cases}
+\newline\\
+x_{0}(a_{0})^{00}x_{i}(a_{i})^{00}+x_{0}(a_{0})^{01}x_{i}(a_{i})^{01}+x_{0}(a_{0})^{10}x_{i}(a_{i})^{10}+x_{0}(a_{0})^{11}x_{i}(a_{i})^{11}=0
+\newline\\
+x_{1}(a_{1})^{00}x_{i}(a_{i})^{00}+x_{1}(a_{1})^{01}y_{i}(a_{i})^{00}+\\x_{1}(a_{1})^{10}x_{i}(a_{i})^{10}+x_{1}(a_{1})^{11}y_{i}(a_{i})^{10}+\\y_{1}(a_{1})^{00}x_{i}(a_{i})^{01}+y_{1}(a_{1})^{01}y_{i}(a_{i})^{01}+y_{1}(a_{1})^{10}x_{i}(a_{i})^{11}+y_{1}(a_{1})^{11}y_{i}(a_{i})^{11}=0
+\newline\\
+x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+x_{i}(a_{i})^{01}x_{4}(a_{4})^{01}+\\x_{i}(a_{i})^{10}y_{4}(a_{4})^{00}+x_{i}(a_{i})^{11}y_{4}(a_{4}^{01}+y_{i}(a_{i})^{00}x_{4}(a_{4})^{10}+y_{i}(a_{i})^{01}x_{4}(a_{4})^{11}+\\y_{i}(a_{i})^{10}y_{4}(a_{4})^{10}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{11}=0
+\newline \\
+x_{0}(a_{0})^{00}x_{4}(a_{4})^{00}+x_{0}(a_{0})^{01}x_{4}(a_{4})^{01}+x_{0}(a_{0})^{10}y_{4}(a_{4})^{00}+x_{0}(a_{0})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{0}(a_{0})^{00}x_{4}(a_{4})^{00}+x_{0}(a_{0})^{01}x_{4}(a_{4})^{01}+x_{0}(a_{0})^{10}y_{4}(a_{4})^{00}+x_{0}(a_{0})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{1}(a_{1})^{00}x_{4}(a_{4})^{00}+x_{1}(a_{1})^{01}x_{4}(a_{4})^{10}+\\x_{1}(a_{1})^{10}y_{4}(a_{4})^{00}+x_{1}(a_{1})^{11}y_{4}(a_{4}^{10}+y_{1}(a_{1})^{00}x_{4}(a_{4})^{11}+y_{1}(a_{1})^{01}x_{4}(a_{4})^{11}+\\y_{1}(a_{1})^{10}y_{4}(a_{4})^{01}+y_{1}(a_{1})^{11}y_{4}(a_{4})^{11}=00
+\end{cases}
+\end{equation}
+\newline \\
+\leavevmode
+\newline \\
+we have infinite solutions in case E of orthogonality,but we have to prove  is  there a vector  $\ket{\zeta}$ which is  let (23) dont have  any solution .
+\newline \\
+$(i)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{A}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{BC}$,   ( $      A|BC    $cut   )
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\begin{equation}
+C = \begin{cases}
+x_{i}=-y_{5}    (  y_{i}=-x_{5})        &   ,i=0,1\\
+\newline \\
+
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  
+,    i=0,1
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $
+\newline \\
+$x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3$
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}=-y_{5}    (  y_{i}=-x_{5})      ,i=0,1
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0
+\end{cases}	
+\end{equation}
+\begin{equation}
+E=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  
+,    i=0,1
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0
+\end{cases}	
+\end{equation}
+
+
+
+
+
+
+
+
+\leavevmode\\
+\newline \\
+$(ii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{B}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AC}$,   ( $      B|AC    $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $ where k=2,3
+\newline \\
+\begin{equation}
+C = \begin{cases}
+x_{k}=-y_{5}    (  y_{k}=-x_{5})        & k=2,3
+\newline \\
+
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{k}=-y_{5}    (  y_{k}=-x_{5}),  k=2,3
+\newline \\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+\begin{equation}
+E=\begin{cases}
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline \\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+$(iii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{C}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AB}$,   ( $      C|AB   $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ , i=0,1
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+x_{i}(a_{i})^{01}y_{5}(a_{5})^{00}+x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1,2
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $ ,k=2,3
+\leavevmode
+\newline \\
+$x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}y_{5}(a_{5})^{00}+x_{k}(a_{k})^{10}x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}y_{5}(a_{5})^{10}+\\y_{k}(a_{k})^{00}x_{5}(a_{5})^{01}+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}a_{k}^{10}x_{5}a_{5}^{11}+^{}y_{k}(a_{k})^{11}y_{5}(a_{5})^{11}=0 .$ where k=2,3
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}\\(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+x_{i}(a_{i})^{01}y_{5}(a_{5})^{00}+\\x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0 ,i=0,1
+\newline \\
+
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}y_{5}(a_{5})^{00}+x_{k}(a_{k})^{10}x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}y_{5}(a_{5})^{10}+\\y_{k}(a_{k})^{00}x_{5}(a_{5})^{01}+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}a_{k}^{10}x_{5}a_{5}^{11}+^{}y_{k}(a_{k})^{11}y_{5}(a_{5})^{11}=0 ,k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+
+
+
+
+\leavevmode\\
+\newline \\
+case 6
+\newline \\
+case 3
+\newline \\
+$\ket{\Psi}_{i}=(x_{i}\ket{0}+y_{i}\ket{1})_{A}\otimes ((a_{i})^{00}\ket{00}+(a_{i})^{01}\ket{01}+(a_{i})^{10}\ket{10}+(a_{i})^{11}\ket{11})_{BC}     $  $where $ i=0,1$  $
+\newline \\
+$\ket{\Psi}_{k}=(x_{k}\ket{0}+y_{k}\ket{1})_{B}\otimes((a_{k})^{00}\ket{00}+(a_{k})^{01}\ket{01}+(a_{k})^{10}\ket{10}+(a_{k})^{11}\ket{11})_{AC}$, where k=2,3
+\newline \\
+$\ket{\Psi}_{4}=x_{4}\ket{0}_{B}\otimes((a_{3})^{00}\ket{00}+(a_{3})^{01}\ket{01}+(a_{3})^{10}\ket{10}+(a_{3})^{11}\ket{11})_{AC}$,
+
+where $|x_{i}|^{2}+|y_{i}|^{2}=1     $ $       ,i=0,1,2,3,$,
+\newline \\
+$|(a_{i})^{00}|^{2}+|(a_{i})^{01}|^{2}+|(a_{i})^{10}|^{2}+|(a_{i})^{11}|^{2}=|a|^{2}+|b|^{2}=1     $,    $       ,i=0,1,2,3,$,
+\newline \\
+supposse above 5 vectors are pairly orthogonal,then the relations between the coefficients :
+\newline \\
+$\bra{\Psi_{0}}\ket{\Psi_{1}}=0        $ 
+\newline \\
+$x_{0}=-y_{1}(y_{0}=-x_{1})$  
+\newline \\
+$or  $ 
+\newline \\
+$(a_{0})^{00}(a_{1})^{00}+(a_{0})^{01}(a_{1})^{01}+(a_{0})^{10}(a_{1})^{10}+(a_{0})^{11}(a_{1})^{11}=0$
+\leavevmode
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\Psi_{k}}=0 $       where     $ ,i=0,1  ,k=2,3   $ 
+\leavevmode
+\newline \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+\newline \\
+$\ket{\Psi}_{k}=x_{k}(a_{k})^{00}\ket{000}_{ABC}+x_{k}(a_{k})^{01}\ket{001}_{ABC}+x_{k}(a_{k})^{10}\ket{100}_{ABC}+x_{k}(a_{k})^{11}\ket{101}_{ABC}+y_{k}(a_{k})^{00}\ket{010}_{ABC}+y_{k}(a_{k})^{01}\ket{011}_{ABC}+y_{k}(a_{k})^{10}\ket{110}_{ABC}+y_{k}(a_{k})^{11}\ket{111}_{ABC}$
+\newline \\
+from orthognality ,we could get
+\newline \\
+$  x_{i}(a_{i})^{00}x_{k}(a_{k})^{00}+x_{i}(a_{i})^{01}x_{k}(a_{k})^{01}+x_{i}(a_{i})^{10}x_{k}(a_{k})^{10}+x_{i}(a_{i})^{11}x_{k}(a_{k})^{11}+y_{i}(a_{i})^{00}y_{k}(a_{k})^{00}+y_{i}(a_{i})^{01}y_{k}(a_{k})^{01}+y_{i}(a_{i})^{10}y_{k}(a_{k})^{10}+y_{i}(a_{i})^{11}y_{k}(a_{k})^{11}=0$ where i=0,1,2
+
+
+
+\leavevmode\\
+\newline \\
+$\bra{\Psi_{i}}\ket{\Psi_{4}}=0 $       where     $ ,i=0,1,2   $ 
+\leavevmode
+\newline  \\
+$\ket{\Psi}_{i}=x_{i}(a_{i})^{00}\ket{000}+x_{i}(a_{i})^{01}\ket{001}+x_{i}(a_{i})^{10}\ket{100}+x_{i}(a_{i})^{11}\ket{011}+y_{i}(a_{i})^{00}\ket{100}+y_{i}(a_{i})^{01}\ket{101}+y_{i}(a_{i})^{10}\ket{110}+y_{i}(a_{i})^{11}\ket{111}$
+\leavevmode
+\newline \\
+$\ket{\Psi}_{4}=x_{4}(a_{4})^{00}\ket{000}+y_{4}(a_{4})^{01}\ket{111}$
+\newline \\
+for orthogonality:
+\newline \\
+$a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0$
+\newline \\
+$\bra{\Psi_{k}}\ket{\Psi_{4}}=0 $  where k=2,3
+\newline \\
+$x_{k}a_{k}^{00}x_{4}a_{4}^{00}+x_{k}a_{k}^{11}x_{4}a_{4}^{11}=0$
+
+Finally we get following genreal result:
+\begin{equation}
+E = \begin{cases}
+x_{0}=-y_{1}  (y_{0}=-x_{1} )      &  \\
+
+\newline \\
+x_{i}(a_{i})^{00}x_{k}(a_{k})^{00}+x_{i}(a_{i})^{01}x_{k}(a_{k})^{01}+x_{i}(a_{i})^{10}\\x_{k}(a_{k})^{10}+x_{i}(a_{i})^{11}x_{k}(a_{k})^{11}+y_{i}(a_{i})^{00}y_{k}(a_{k})^{00}+\\y_{i}(a_{i})^{01}y_{k}(a_{k})^{01}+y_{i}(a_{i})^{10}y_{k}(a_{k})^{10}+y_{i}(a_{i})^{11}y_{k}(a_{k})^{11}=0  
+, where i=0,1,k=2,3
+\newline\\
+a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{k}a_{k}^{00}x_{4}a_{4}^{00}+x_{k}a_{k}^{11}x_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\newline \\
+\begin{equation}
+F = \begin{cases}
+(a_{0})^{00}(a_{1})^{00}+(a_{0})^{01}(a_{1})^{01}+(a_{0})^{10}(a_{1})^{10}+(a_{0})^{11}(a_{1})^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{k}(a_{k})^{00}+x_{i}(a_{i})^{01}x_{k}(a_{k})^{01}+x_{i}(a_{i})^{10}\\x_{k}(a_{k})^{10}+x_{i}(a_{i})^{11}x_{k}(a_{k})^{11}+y_{i}(a_{i})^{00}y_{k}(a_{k})^{00}+\\y_{i}(a_{i})^{01}y_{k}(a_{k})^{01}+y_{i}(a_{i})^{10}y_{k}(a_{k})^{10}+y_{i}(a_{i})^{11}y_{k}(a_{k})^{11}=0  
+, where i=0,1,k=2,3
+\newline\\
+a x_{i}(a_{i})^{00}x_{4}(a_{4})^{00}+y_{i}(a_{i})^{11}y_{4}(a_{4})^{01}=0
+\newline\\
+x_{k}a_{k}^{00}x_{4}a_{4}^{00}+x_{k}a_{k}^{11}x_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\newline \\
+\leavevmode
+\newline \\
+we have infinite solutions in case E of orthogonality,but we have to prove  is  there a vector  $\ket{\zeta}$ which is  let (14) ,(15) dont have  any solution .
+\newline \\
+$(i)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{A}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{BC}$,   ( $      A|BC    $cut   )
+
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\begin{equation}
+C = \begin{cases}
+x_{i}=-y_{5}    (  y_{i}=-x_{5})        &   ,i=0,1\\
+\newline \\
+
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  
+,    i=0,1
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $
+\newline \\
+$x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3$
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}=-y_{5}    (  y_{i}=-x_{5})      ,i=0,1
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0
+\end{cases}	
+\end{equation}
+\begin{equation}
+E=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}\\
+x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\
+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}\\
+y_{5}(a_{5})^{11}=0  
+,    i=0,1
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{01}y_{4}a_{4}^{11}=0
+\end{cases}	
+\end{equation}
+
+
+
+
+
+
+
+
+\leavevmode\\
+\newline \\
+$(ii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{B}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AC}$,   ( $      B|AC    $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ 
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $ where k=2,3
+\newline \\
+\begin{equation}
+C = \begin{cases}
+x_{k}=-y_{5}    (  y_{k}=-x_{5})        & k=2,3
+\newline \\
+
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\end{cases}
+\end{equation}
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{k}=-y_{5}    (  y_{k}=-x_{5}),  k=2,3
+\newline \\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+\begin{equation}
+E=\begin{cases}
+\newline \\
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}x_{5}(a_{5})^{01}+x_{k}(a_{k})^{10}\\
+x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}x_{5}(a_{5})^{11}+y_{k}(a_{k})^{00}y_{5}(a_{5})^{00}\\+
+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}(a_{k})^{10}y_{5}(a_{5})^{10}+y_{k}(a_{k})^{11}
+y_{5}(a_{5})^{11}=0 
+, k=2,3
+\newline \\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{01}x_{5}(a_{5})^{01}+\\x_{i}(a_{i})^{10}x_{3}(a_{5})^{10}+x_{i}(a_{i})^{11}x_{5}(a_{5})^{11}+y_{i}(a_{i})^{00}y_{5}(a_{5})^{00}+\\y_{i}(a_{i})^{01}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+\leavevmode\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+\leavevmode
+\newline \\
+$(iii)    :$ Assume we have a vector $\ket{\zeta}=(x_{5}\ket{0}+y_{5}\ket{1})_{C}\otimes ((a_{5})^{00}\ket{00}+(a_{5})^{01}\ket{01}+(a_{5})^{10}\ket{10}+(a_{5})^{11}\ket{11})_{AB}$,   ( $      C|AB   $cut   )
+\leavevmode
+\newline \\
+
+$\bra{\Psi_{i}}\ket{\zeta}=0 $ , i=0,1
+\newline\\
+$x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+x_{i}(a_{i})^{01}y_{5}(a_{5})^{00}+x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0$
+\newline\\
+where i=0,1,2
+\newline \\
+$\bra{\Psi_{k}}\ket{\zeta}=0 $ ,k=2,3
+\leavevmode
+\newline \\
+$x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}y_{5}(a_{5})^{00}+x_{k}(a_{k})^{10}x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}y_{5}(a_{5})^{10}+\\y_{k}(a_{k})^{00}x_{5}(a_{5})^{01}+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}a_{k}^{10}x_{5}a_{5}^{11}+^{}y_{k}(a_{k})^{11}y_{5}(a_{5})^{11}=0 .$ where k=2,3
+\newline \\
+$\bra{\Psi_{4}}\ket{\zeta}=0 $
+\newline \\
+$x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0$
+\leavevmode
+\newline \\
+new ,we have to consider folowing system whether have solution or not 
+\begin{equation}
+D=\begin{cases}
+\newline \\
+x_{i}(a_{i})^{00}x_{5}(a_{5})^{00}+x_{i}(a_{i})^{10}x{5}(a_{5})^{01}+y_{i}(a_{i})^{00}x_{5}\\(a_{5})^{10}+y_{i}(a_{i})^{10}x_{5}(a_{5})^{11}+x_{i}(a_{i})^{01}y_{5}(a_{5})^{00}+\\x_{i}(a_{i})^{11}y_{5}(a_{5})^{01}+y_{i}(a_{i})^{10}y_{5}(a_{5})^{10}+y_{i}(a_{i})^{11}y_{5}(a_{5})^{11}=0 ,i=0,1
+\newline \\
+
+x_{k}(a_{k})^{00}x_{5}(a_{5})^{00}+x_{k}(a_{k})^{01}y_{5}(a_{5})^{00}+x_{k}(a_{k})^{10}x_{5}(a_{5})^{10}+x_{k}(a_{k})^{11}y_{5}(a_{5})^{10}+\\y_{k}(a_{k})^{00}x_{5}(a_{5})^{01}+y_{k}(a_{k})^{01}y_{5}(a_{5})^{01}+y_{k}a_{k}^{10}x_{5}a_{5}^{11}+^{}y_{k}(a_{k})^{11}y_{5}(a_{5})^{11}=0 ,k=2,3
+\newline\\
+x_{4}a_{4}^{00}x_{5}a_{5}^{00}+x_{5}a_{5}^{11}y_{4}a_{4}^{11}=0
+\end{cases}
+\end{equation}
+
+
+\end{document}

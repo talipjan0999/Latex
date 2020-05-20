@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+
+\title{The short presentation about UPB ,UBB,CES,GES}
+\author{talipjan}
+
+\begin{document}
+\leavevmode
+\newline \\
+case 1
+\newline \\
+
+$\ket{\Psi}_{4}=(\ket{0})_{B}\otimes (\ket{00}+\ket{11})_{AC}$,
+\newline \\
+\newline \\
+lets check is there exit any bipartitate vector orthogonal to above 5 vectors or not .
+\newline \\
+(i).let assume $ \ket{\zeta}=\ket{+}_{A}\otimes(a\ket{+-}+b\ket{--})_{BC}$
+\\
+=$ (a\ket{++-}+b\ket{+--})_{ABC} $\\
+\\
+from  $ \bra{\zeta}\ket{\Psi}_{4}=0 $ ,wil get :
+a=b\\
+\\
+then $ \ket{\zeta}=\ket{+}_{A}(\ket{0}\ket{-})_{BC} $ not orthogonal to all above  5 vectors\\
+\\
+similarly:
+(ii).let assume \\$ \ket{\zeta}=\ket{+}_{B}\otimes(a\ket{+-}+b\ket{--})_{AC}$
+\\
+\\
+=$ (a\ket{++-}+b\ket{-+-})_{ABC} $\\
+\\
+from  $ \bra{\zeta}\ket{\Psi}_{4}=0 $ ,wil get :
+a=-b\\
+\\
+then $ \ket{\zeta}=(\ket{1}\ket{+-})_{ABC} $ not orthogonal to all above  5 vectors\\
+(iii).$\ket{\zeta}=\ket{+}_{C}\otimes(a\ket{+-}+b\ket{--})_{AB}$
+\\
+\\
+=$ (a\ket{+-+}+b\ket{--+})_{ABC} $\\
+\\
+from  $ \bra{\zeta}\ket{\Psi}_{4}=0 $ ,wil get :
+a=0\\
+\\
+then $ \ket{\zeta}=(\ket{+}\ket{--})_{ABC}=\ket{--+}_{ABC} $ not orthogonal to all above  5 vectors\\
+\end{document}

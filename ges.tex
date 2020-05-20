@@ -1,0 +1,245 @@
+\documentclass[12pt,twoside]{report}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{xcolor}
+
+\title{The  notice from exact ,apprximate ,and numerical calculation of GES}
+\author{talipjan}
+
+\begin{document}
+	
+			
+	\paragraph{reference concepts}
+	lemma6.Let there be given  a  set of product vectors $B={\ket{\varPsi _{x}}  \otimes \ket{\Psi_{x}} }_{x}$ from $ C^{m}\otimes C^{n} $ with cardinality $ |B|\geq m+n-1. $ if any m-tuple of vectors $ \ket{\Psi_{x}} $ span $ C^{m} $and  any n-tuple of vectors $ \ket{\varPsi_{x}} $ span $ C^{n} $,then there is no product vector in the orthocomplement of span B.	
+	\newline\\
+	while we care about linear indepence of the coordinates,at the same time we require the condition dim span B$ < d^{N} $ to hold ,that is ,the resulting GES to be nonempty.
+\paragraph{our cnsideration}
+   In our case we consider multiple qubit Hilbert spaces, i.e.,$ H_{2^{3}} :=(C^{2})^{\otimes3}$
+   \\
+   \begin{equation*}
+F= \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\otimes(1,x+y\alpha+Z\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace 
+   \end{equation*}
+   \\   
+   \\
+    where a,b,c,A,B,C,XY,Z$ \in \{-1,0,1\} $
+   \\
+   \\
+   case1.
+  \\
+ \begin{table}[ht]
+ 	\centering
+ 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+ 		\hline
+ 		 & a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+ 		\hline
+ 		0	& $\surd$&  &$\surd$ &$\surd$ & &$\surd$ &$\surd$ & &  $\surd$& 0\\
+ 		\hline
+ 		 	1 &	&$\surd$ & & &$\surd$ & & &$\surd$ &  &\\
+ 		\hline 		
+ 	\end{tabular}
+ 	\caption{}
+\end{table}
+ 
+   F=$ \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,\alpha)_{A}\otimes(1,\alpha)_{B}\otimes(1,\alpha)_{C}}  \ |\alpha\in C\right\rbrace  
+  \\
+  AB:  (1,\alpha)_{A} \otimes(1,\alpha)_{B}$ =$ (1,\alpha,\alpha,\alpha^{2})$  ,  number of independed linear poynomilas  3  \\
+  Ac:  $(1,\alpha)_{A} \otimes(1,\alpha)_{C}$ =$ (1,\alpha,\alpha,\alpha^{2})$  ,  number of independed linear poynomilas  3  \\
+  BC:  $(1,\alpha)_{B} \otimes(1,\alpha)_{C}$ =$ (1,\alpha,\alpha,\alpha^{2})$  ,  number of independed linear poynomilas  3  \\
+  
+   from lemma 6,due to construct GES ,the dimention of local part at least one part have same dimetion with local dimention d.for that reason case 1 not generate GES.\\
+   
+   
+  Notition: from case 1,we could conclude all the symetric partition  could not generate GES.\\
+  
+  ===================================
+  
+  case2.
+  
+  \begin{table}[ht]
+  	\centering
+  	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+  		\hline
+  		& a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+  		\hline
+  		0	& $\surd$&  &$\surd$ & &$\surd$ & &$\surd$ & &  & 2\\
+  		\hline
+  		1 &	&$\surd$ & & $\surd$& &$\surd$ & &$\surd$ & $\surd$ &\\
+  		\hline 		
+  	\end{tabular}
+  	\caption{}
+  \end{table}
+  
+  F=$ \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,\alpha)_{A}\otimes(1,1+\alpha^{2})_{B}\otimes(1,\alpha+\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace  
+  \\
+  AB:  (1,\alpha)_{A}\otimes(1,1+\alpha^{2})_{B}$ =$ (1,\alpha,1+\alpha^{2},\alpha+\alpha^{3})$  ,  number of independed linear poynomilas  4  \\
+  AC:   $(1,\alpha)_{A}\otimes(1,\alpha+\alpha^{2})_{C}$ =$ (1,\alpha,\alpha+\alpha^{2},\alpha^{2}+\alpha^{3})$  ,  number of independed linear poynomilas  4  \\
+  BC:  $(1,1+\alpha^{2})_{B} \otimes(1,\alpha+\alpha^{2})_{C}$ =$ (1,1+\alpha^{2},\alpha+\alpha^{2},\alpha+\alpha^{2}+\alpha^{3}+\alpha^{4})$  ,  number of independed linear poynomilas  4  \\
+  
+
+  $ \ket{\Psi}=(1,\alpha,1+\alpha^{2},\alpha+\alpha^{3})\otimes (1,\alpha+\alpha^{2}) =(1,1+\alpha^{2},\alpha,\alpha^{2}+\alpha^{3},\alpha+\alpha^{2},\alpha^{2}+\alpha^{3},\alpha^{2}+\alpha^{3}+\alpha^{4}+\alpha^{5},\alpha+\alpha^{3},\alpha^{2}+\alpha^{3}+\alpha^{4}+\alpha^{6})_{ABC}$   , dim 6
+  
+  
+  case 2 could generate  dimention of 2 GES,which means there is have two vectors orthogonal to all the vectors inB.\\
+  \begin{center}
+	$ (0,-1,1,1,0,0,0,0) $\\
+$ (0,1,0,-1,0,0,0,0) $
+  \end{center}
+
+
+ 
+ 
+  ==============================
+ 
+ 
+ 
+  case3.
+  
+  
+   \begin{table}[ht]
+  	\centering
+  	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+  		\hline
+  		& a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+  		\hline
+  		0	& $\surd$& $\surd$ & & & & & & &  & 2\\
+  		\hline
+  		1 &	& &$\surd$ & $\surd$&$\surd$ &$\surd$ &$\surd$ &$\surd$ & $\surd$ &\\
+  		\hline 		
+  	\end{tabular}
+  	\caption{}
+  \end{table}
+  
+    
+  F=$ \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,\alpha)_{A}\otimes(1,1+\alpha+\alpha^{2})_{B}\otimes(1,1+\alpha+\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace  
+  \\
+  AB:  (1,\alpha)_{A}\otimes(1,1+\alpha+\alpha^{2})_{B}$ =$ (1,\alpha,1+\alpha+\alpha^{2},\alpha+\alpha^{2}+\alpha^{3})$  ,  number of independed linear poynomilas  4  \\
+  Ac:  $(1,\alpha)_{A}\otimes(1,1+\alpha+\alpha^{2})_{C}$ =$ (1,\alpha,1+\alpha+\alpha^{2},\alpha+\alpha^{2}+\alpha^{3})$  ,  number of independed linear poynomilas  4  \\
+  BC:  $(1,1+\alpha+\alpha^{2})_{B} \otimes(1,1+\alpha+\alpha^{2})_{C}$ =$ (1,1+\alpha+\alpha^{2},1+\alpha+\alpha^{2},(1+\alpha+\alpha^{2})^{2})$  ,  number of independed linear poynomilas  3  \\
+  \\
+  $ {\ket{\Psi}=(1,\alpha)_{A}\otimes(1,1+\alpha+\alpha^{2})_{B}\otimes(1,1+\alpha+\alpha^{2})_{C}} =(1,\alpha,1+\alpha+\alpha^{2},\alpha+\alpha^{2}+\alpha^{3},\alpha+\alpha^{2}+\alpha^{3},(1+\alpha+\alpha^{2})^{2},\alpha+2\alpha^{2}+3\alpha^{4}+2\alpha^{3}+\alpha^{5},1+\alpha+\alpha^{2})_{ABC}$   , dim 6
+  
+   case 3 could generate  dimention of 2 GES,which means there is have two vectors orthogonal to all the vectors inB.\\
+  \begin{center}
+  	$ (0,0,1,,0,0,0,-1) $\\
+  	$ (0,0,0,1,-1,0,0,0) $
+  \end{center}
+	Notion:if in the three parties any have diffrent coordinates or any two of parites symeteric ,it could generate GES dimention of 2.\\
+	===============================
+	  
+	  
+	  
+	
+	case 4
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			& a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+			\hline
+			0	& & &$\surd$ & & &$\surd$ & & &$\surd$  & 0\\
+			\hline
+			-1 &$\surd$	& $\surd$& & $\surd$&$\surd$ & &$\surd$ &$\surd$ &  &\\
+			\hline 		
+			
+		\end{tabular}
+		\caption{ }
+	\end{table}
+$ \ket{\Psi}=(1,-1-\alpha)_{A}\otimes(1,-1-\alpha)_{B}\otimes(1,-1-\alpha)_{C} $\\
+AB:$(1,-1-\alpha,-1-\alpha,1+2\alpha+\alpha^{2})$ ,dim 3\\
+AC:$(1,-1-\alpha,-1-\alpha,1+2\alpha+\alpha^{2})$ ,dim 3\\
+BC:$(1,-1-\alpha,-1-\alpha,1+2\alpha+\alpha^{2})$ ,dim 3\\
+case 4 not generate GES.
+
+=========================\\
+case5
+	\begin{table}[ht]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		& a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+		\hline
+		0	& & &$\surd$ & $\surd$& & & $\surd$& &  & 2\\
+		\hline
+		-1 &$\surd$	& $\surd$& & & $\surd$& $\surd$& &$\surd$ &$\surd$  &\\
+		\hline 		
+		 
+	\end{tabular}
+	\caption{ }
+\end{table}
+
+$ \ket{\Psi}=(1,-1-\alpha)_{A}\otimes(1,-\alpha-\alpha^{2})_{B}\otimes(1,-\alpha-\alpha^{2})_{C} $\\
+AB:$(1,-1-\alpha,-\alpha-\alpha^{2},\alpha+2\alpha+\alpha^{2})$ ,dim 4\\
+AC:$(1,-1-\alpha,-\alpha-\alpha^{2},\alpha+2\alpha+\alpha^{2})$ ,dim 4\\
+BC:$(1,-\alpha-\alpha^{2},-\alpha-\alpha^{2},\alpha^{2}+2\alpha^{3}+\alpha^{4})$ ,dim 4\\
+
+$ \ket{\Psi}=(1,-1-\alpha,-\alpha-\alpha^{2},\alpha+2\alpha+\alpha^{2},-\alpha-\alpha^{2},\alpha+2\alpha^{2}+\alpha^{3},\alpha^{2}+2\alpha^{3}+\alpha^{4},-\alpha^{2}-3\alpha^{3}-3\alpha^{4}-\alpha^{5}) $,dim 6\\
+then ,it could generate dimention of 2 GES.
+
+
+==================================\\
+case6\\
+	\begin{table}[ht]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		& a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+		\hline
+		0	& & & & $\surd$&$\surd$ & & &$\surd$ &  & 2\\
+		\hline
+		-1 &$\surd$	& $\surd$&$\surd$ & & & $\surd$&$\surd$ & &$\surd$  &\\
+		\hline 		
+		
+	\end{tabular}
+	\caption{ }
+\end{table}
+
+$ \ket{\Psi}=(1,-1-\alpha-\alpha^{2})_{A}\otimes(1,-\alpha^{2})_{B}\otimes(1,-1-\alpha^{2})_{C} $\\
+AB:$(1,-1-\alpha-\alpha^{2},-\alpha^{2},\alpha^{2}+\alpha^{3}+\alpha^{4})$ ,dim 4\\
+AC:$(1,-1-\alpha-\alpha^{2},-1-\alpha^{2},1+2\alpha^{2}+\alpha+\alpha^{3}+\alpha^{4})$ ,dim 4\\
+BC:$(1,-\alpha^{2},-1-\alpha^{2},\alpha^{2}+\alpha^{4})$ ,dim 4\\
+
+$ \ket{\Psi}=(1,-1-\alpha-\alpha^{2},-\alpha^{2},\alpha^{2}+\alpha^{3}+\alpha^{4},-1-\alpha^{2},1+\alpha+2\alpha^{2}+\alpha^{3}+\alpha^{4},\alpha^{2}+\alpha^{4},-\alpha^{2}-\alpha^{3}-2\alpha^{4}-\alpha^{5}-\alpha^{6}) $ ,dim 6\\
+it could generate dimention of 2 GES.
+
+===============================
+
+
+
+case 7\\
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		& a & b  &  c & A & B & C & X & Y & Z & dim GES  \\
+		\hline
+		0	& &$\surd$ & & &$\surd$ & & &$\surd$ &  & 2\\
+		\hline
+		1 &	& & & & & $\surd$& & &$\surd$  &\\
+		\hline 		
+			-1 &$\surd$	& &$\surd$ & $\surd$& & & $\surd$& &  &\\
+		\hline 		
+	\end{tabular}
+	\caption{ }
+\end{table}
+$ \ket{\Psi}=(1,-1-\alpha^{2})_{A}\otimes(1,-1+\alpha^{2})_{B}\otimes(1,-1+\alpha^{2})_{C} $\\
+AB:$(1,-1-\alpha^{2},-1+\alpha^{2},1+\alpha^{4})$ ,dim 4\\
+AC$(1,-1-\alpha^{2},-1+\alpha^{2},1+\alpha^{4})$ ,dim 4\\
+BC:$(1,-1+\alpha^{2},-1+\alpha^{2},1+2\alpha^{2}+\alpha^{4})$ ,dim 3\\
+$ \ket{\Psi}=(1,-1-\alpha^{2})_{A}\otimes(1,-1+\alpha^{2})_{B}\otimes(1,-1+\alpha^{2})_{C}=(1,-1-\alpha^{2},-1+\alpha^{2},1+\alpha^{4},-1+\alpha^{2},1+\alpha^{4},1+2\alpha^{2}+\alpha^{4},-1-\alpha^{4}+\alpha^{2}+\alpha^{4}) $,dim 6 \\
+it could generate dimention of 2 GES.
+
+============================
+
+conclution,in A,B,C partition if all the party have same coordinater then the B not generate GES.if any of two part have same  coordinates or all the partites have  different  coordinates ,then B could genreate dimetion of 2 GES.\\
+
+
+
+
+\end{document}

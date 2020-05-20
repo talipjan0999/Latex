@@ -1,0 +1,15 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+
+\title{The  notice from exact ,apprximate ,and numerical calculation of GES}
+\author{talipjan}
+
+\begin{document}
+dds
+\end{document}

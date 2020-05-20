@@ -1,0 +1,12 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+
+\begin{document}
+Greenberger–Horne–Zeilinger state
+\end{document}

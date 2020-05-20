@@ -1,0 +1,11 @@
+\contentsline {chapter}{Certificate of Examination}{i}{chapter*.2}% 
+\contentsline {chapter}{Supervisors' Certificate}{i}{chapter*.2}% 
+\contentsline {chapter}{Dedication}{i}{chapter*.2}% 
+\contentsline {chapter}{Declaration of Originality}{i}{chapter*.2}% 
+\contentsline {chapter}{Acknowledgment}{i}{chapter*.2}% 
+\contentsline {chapter}{Abstract}{i}{chapter*.2}% 
+\contentsline {chapter}{List of Figures}{i}{chapter*.2}% 
+\contentsline {chapter}{List of Tables}{i}{chapter*.2}% 
+\contentsline {chapter}{\numberline {1}chapter1}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Section 1}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Section2}{1}{section.1.2}% 

@@ -1,0 +1,300 @@
+\documentclass[a4paper,12pt,landscape]{report}
+
+	\usepackage{parallel}
+\usepackage{kantlipsum}
+\usepackage[margin=.5in]{geometry}
+
+
+\usepackage{lipsum}
+\usepackage{physics}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{showlabels}
+\usepackage{cases}
+\usepackage{mathtools}
+
+
+
+
+	\begin{document}
+		\begin{Parallel}[v]{0.49\textwidth}{0.49\textwidth}
+			\ParallelLText{ PRELIMINARIES:Finite–dimensional product Hilbert spaces,
+				denoted $H_{d_{1}},_{d_{2}}........,_{d_{N}}= C^{d_{1}} \otimes ....C^{d_{n}}$
+				or $H_{d^{n}} = C^{d}\otimes C ^{d}.......\otimes C^{d}$.
+				Subsystems
+				are denoted $A_{1}, A_{2}, . . . , A_{n} $=A in the general multipartite case or A, B, forsmaller systems. For pure states we use the traditional denotations: $ \ket{\Psi} ,\ket{\Psi}$ , often
+				adding subscripts corresponding to respective (groups of) parties, e.g., $ \ket{\Psi}_{ABC} $. We
+				will use the standard basis for all the parties ${ \ket{i} }_{i=0} ^{d}$
+				and the kets will be written as row vectors.\\
+				Entanglement. An n–partite pure state$ \ket{\Psi}_{A_{1}A_{2}.........A_{n}} $ is said to be fully product if
+				it can be written as  $ \ket{\Psi}_{A_{1}A_{2}.........A_{n}} =\ket{\Psi}_{A_{1}}\otimes\ket{\kappa}_{A_{2}}.......\otimes\ket{\vartheta}_{n}$ Otherwise it is called
+				entangled. Among entangled states a particularly interesting class is constituted by
+				genuinely multiparty entangled (GME) states, i.e., those which cannot be written
+				as$ \ket{\Psi}_{A_{1}A_{2}.........A_{n}}=\ket{\Psi}_{S}\otimes\ket{\kappa}_{\bar{S}}$
+				for any bipartite cut (biaprtition)$ S|\bar{S}$ where S is a
+				subset of the parties and $ \bar{S}=A \backslash S $.In other words a GME state is not biproduct
+				with respect to any bipartite cut of the parties. A canonical example of a GME state is
+				the famous GHZ state$ \Ket{GHZ}=1/\surd2(\ket{000.....00}+\ket{111.......11}) $.
+				A state $ \ket{\Psi} $ is called k– product if it is of the form $ \ket{\Psi_{\otimes^{k}}}=\ket{\Psi_{1}}_{s_{1}}\otimes \ket{\Psi_{2}}_{s_{2}}\otimes................ \otimes\ket{\Psi_{k}}_{s_{k}}$
+				where $ S_{1}\cup S_{2}\cup S_{3}........\cup S_{K}=A $ is a k–partition. In the particular case k = n, the
+				vector is fully product; when k = 2 it is biproduct.\\
+				Completely and genuinely entangled subspaces. It is a  subspaces containing only entangled states, so called completely entagled
+				subspaces  (CESs).  It has been shown that their maximal achievable dimension for $H_{d^{n}}$ is
+				\begin{equation*}
+				D_{max}^{CES}=.d^{n}+nd+n-1=(d^{n-1}+d^{n-2}+......+1-n)(d-1)
+				\end{equation*} 
+				\\ ]
+			Definition 1. A subspace $\varrho \subset H_{d_{1},.........,d_{n}}$ is called a genuinely entangled subspace
+			(GES) of\ \ $ H_{d_{1},.........,d_{n}} $ if any $ \ket{\Psi}\subset\varrho $ is genuinely multiparty entangled (GME).To obtain the maximal available dimension of a GES one needs to consider maximal
+			dimensions of all bipartite GESs and take the smallest among them. It is then easy to
+			see that for\\
+			\begin{equation*}
+			D_{max}^{GES}=(d^{n}-1)(d-1) 
+			\end{equation*} 
+			An example of a two dimensional GES of $ H_{2^{n}} $ is given by the span of} 
+			\ParallelRText{ the already
+				mentiond GHZ state and the W state,$ \ket{W}=\frac{1}{\surd n} (\ket{000.....01}+\ket{000.....010}+\ket{100.......00})$.
+				\\
+				\ \ \ \ \ \ we have given few other constructions of GESs
+				working in general multiparty scenarios attaining larger dimensions. In particular, one
+				of these constructions gives a GES of dimension $ d^{n-2}(d-1) $
+			. Let us recall it here,
+			for simplicity considering$ H_{3^{3}} $. Given is the set of vectors  $(a \in C):(1,\alpha+\alpha^{3},\alpha^{2}+\alpha^{6})\otimes(1,\alpha^{3},\alpha^{6})\otimes(1,\alpha,\alpha^{2}).$The subspace orthogonal to the span of these vectors
+			is a twelve–dimensional GES. Choosing a set of twelve linearly independent vectors
+			of the form above one obtains an example of a tripartite non–orthogonal unextendbile
+			product basis.\\
+			\paragraph{our consideration}
+			In our case we consider multiple qubit Hilbert spaces, i.e.,$ H_{2^{3}} :=(C^{2})^{\otimes3}$
+			\\
+			\begin{equation*}
+			B= \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\otimes(1,x+y\alpha+Z\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace 
+			\end{equation*}
+			\\   
+		In our cas, the condition that B is a GES is equivalent to saying that it is void of any
+		biproduct vectors, i.e., we require vectors of the for $ \ket{\Psi}_{S}\otimes\ket{\kappa}_{\bar{S}} $, for any bipartition
+		$S |\bar{S} $, not to belong to B. In other words, there can be no such vectors orthogonal to the
+		subspace spanned by the vector in B (in any bipartate cut)\\
+First of all,we  move main detail of discusstion,give some direct calculation 
+on it.
+	B=$ \left\lbrace {\Ket{\Psi}|\ket{\Psi}=(1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\otimes(1,x+y\alpha+Z\alpha^{2})_{C}}  \ |\alpha\in C\right\rbrace $\\
+	\\
+		 $A|BC$
+		\\
+		AB: $ (1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C^{2})_{B}\ =(1,a+b\alpha+c\alpha^{2},A+B\alpha+C^{2},Aa+(Ba+Ab+Bc)\alpha+(Ca+Bb+Ac+Cc)\alpha^{2}+(Cb+Bc)\alpha^{3}+Cc\alpha^{4})$ Assume it is coordinates with respect  $ \alpha   $ linearly independent polynomials have dimension is 4.  (depending on spanning property)
+		\\ C:$ (1,x+y\alpha+Z\alpha^{2}) $ linearly independt polynomial dimestion is 2.(depending on spanning property)} 
+		\ParallelPar
+		\end{Parallel}
+	
+	\begin{Parallel}[v]{0.49\textwidth}{0.49\textwidth}
+		\ParallelLText{$ A|BC $\\
+			BC:$ (1,A+B\alpha+C^{2})\otimes(1,x+y\alpha+Z\alpha^{2})=(1,A+B\alpha+C^{2},x+y\alpha+Z\alpha^{2},XA+(YA+XB+YC)\alpha+(ZA+YB+XC+ZC)\alpha^{2}+(ZB+YC)\alpha^{3}+Zc\alpha^{4}) $ dim is 4\\
+			A:$(1,a+b\alpha+c\alpha^{2})$ dim is 2.
+			\\  
+			Second,let $\bar{B}$ be a subspace whose orthogonal to spane of B.and $\bar{B}$ span by $ \ket{\xi,\gamma}= \ket{\xi}_{S}\otimes\ket{\gamma}_{\bar{S}}=(\ket{\xi}_{0})_{S}\otimes(\Ket{\gamma}_{0},\ket{\gamma}_{1})_{\bar{S}}$
+			\\
+			we could easly say that ,the  tesnodr product  of the  coorosponding pair vecors in these two set are equal to zero.
+			between two sets have bijective function relation.let say F:$ (C^{2})^{2} \longrightarrow (C^{2})^{2} $,or taking it a step further,we could say that F is a transformation.\\
+			Definition: A linear transformation T : v$ \longrightarrow v $is said to be non-singular if T(v) = 0 $ \Rightarrow v = 0  i.e. N(T) = {0}  $ 
+			\\
+			Definition: A linear transformation T : V is said to be
+			singular if  some $ \exists    v  \epsilon   V s.t. v\neq 0   \ \ and \ \ T(v) = 0 $ i.e. N(T) contains at least one-zero element. 
+			\\
+			Definition:A linear transformation is an isomorphism if it
+			is one-one and onto.
+			i.e. T : $V \longrightarrow W$is an isomorphism if\\
+			(1) T is linear transformation.\\
+			(2) T is one-one.\\
+			(3) T is onto.\\
+		
+			Then V and W are called isomorphic.\\
+			We write V $ \cong $ W\\
+			THEOREM: V $ \cong $ W $ \Leftrightarrow $dim V = dim W
+			cooroseponding proof in  silde in attachment.
+			from the definition of linear transformation ,we could say that F:$ (C^{2})^{2} \longrightarrow (C^{2})^{2} $ could generate a Matrix F.and matrix F is consist of $ A,B,C $
+			if we choose a $ S| \bar{S} $ bipartition,$ S\cup \bar{S} =A$ ,where local dimention of S and $ \bar{S} $ are 2,4 respectively.  
+			the question will rise in here,which what about the order of bipartition cut ?
+			\\
+			the answer coming from Galois theory by Harlod .M.Edwards.page 47
+		} 
+		\ParallelRText{-55.content:Basic Galois Theory: The Galois Group (permutaion of the roots of polynomilas)
+			\\
+			for example we suppose S=$B  $ \ \ and$  \bar{S}=AC $ ,which mean we have a permutaion p(123)=213.it is easy to see that this order of permutaion is represent a unique individual bipartition. 
+			\ \ \ \ \ \ \ \ \ our main operation on our case  staring from new.if we assume A biproduct vector  $ \ket{\xi,\gamma}= \ket{\xi}_{S}\otimes\ket{\gamma}_{\bar{S}}=(\ket{\xi}_{0})_{S}\otimes(\Ket{\gamma}_{0},\ket{\gamma}_{1})_{\bar{S}}$ belong to    $ \bar{B} $ ,it should satsify following eqaution:
+			$ \bra{\zeta,\gamma}\ket{\Psi}=0 \ \  \forall \alpha $ where $ \ket{\Psi}\in B $\\
+		 $ A|BC cut $\\
+		\\
+		$ \bra{\xi}_{0}\ket{(1,a+b\alpha+c\alpha^{2})}\otimes\bra{\gamma_{0},\gamma}_{1}\ket{(1,A+B\alpha+C\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2})}=0 $\\
+		\\
+		$ \bra{\zeta}_{0}\otimes(1,a+b\alpha+c\alpha^{2})\otimes\bra{\gamma_{0},\gamma}_{1}((1,A+B\alpha+C\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2}),AX+(BaX+AY+BZ)\alpha+(AZ+YB+XC+ZC)\alpha^{2}+(ZB+YC)\alpha^{3}+ZC\alpha^{4})=0 $\\
+		After sorting:\\
+		$ \bra{\gamma_{0},\gamma}_{1}*(1+A+XA)+\bra{\gamma_{0},\gamma}_{1}*(B+YA+XB+YC)\alpha+(\bra{\gamma_{0},\gamma}_{1}*(Z+ZA+YB+XC+ZC)\alpha^{2}+\bra{\gamma_{0},\gamma}_{1}(ZB+YC)\alpha^{3}+\bra{\gamma_{0},\gamma}_{1}(ZC\alpha^{4}))=0$
+		\\
+	since left side of all above equations is a ploynomila degree 4 in variable $\alpha$.if we consider must be hold ,then the coefficients are qual to zero.which means :
+	\\
+	$ \bra{\gamma_{0},\gamma}_{1}*(1+A+XA) =0$\\
+	$\bra{\gamma_{0},\gamma}_{1}*(B+YA+XB+YC)=0  $\\
+	$ (\bra{\gamma_{0},\gamma}_{1}*(Z+ZA+YB+XC+ZC)=0 $\\
+	$ \bra{\gamma_{0},\gamma}_{1}(ZB+YC)=0 $\\
+	$ \bra{\gamma_{0},\gamma}_{1}(ZC)=0 $
+\begin{equation}
+E=\bra{\gamma_{1}}
+\begin{bmatrix}
+1+A+A+XA\\
+B+YA+XB+Yc\\
+Z+ZA+YB+XC+ZC\\
+ZB+YC\\
+ZC
+\end{bmatrix}
+\end{equation}} 
+		\ParallelPar
+	\end{Parallel}
+	
+	
+	\begin{Parallel}[v]{0.49\textwidth}{0.49\textwidth}
+	\ParallelLText{if we assume $ \ket{\gamma_{0}}$ is a constant parameter,then every bipartition have 5 homogenous linear  equations with 2 unknowns .and we could write these linear homogenous equation in matrix form.\\
+		$ B|AC cut $\\
+		$ \bra{\xi}_{0}\ket{(1,A+B\alpha+C\alpha^{2})}\otimes\bra{\gamma_{0},\gamma}_{1}\ket{(1,a+b\alpha+c\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2})}=0 $\\
+		$ \bra{\zeta}_{0}\otimes(1,A+B\alpha+C\alpha^{2})\otimes\bra{\gamma_{0},\gamma}_{1}((1,a+b\alpha+c\alpha^{2}),(1,X+Y\alpha+Z\alpha^{2}),Xa+(Ya+Xb+Yc)\alpha+(Za+Yb+Xc+Zc)\alpha^{2}+(Zb+Yc)\alpha^{3}+Zc\alpha^{4})=0 $\\
+		After sorting:\\
+		$ \bra{\gamma_{0},\gamma}_{1}*(1+a+Xa)+\bra{\gamma_{0},\gamma}_{1}*(b+Ya+Xb+Yc)\alpha+(\bra{\gamma_{0},\gamma}_{1}*(Z+Za+Yb+Xc+Zc)\alpha^{2}+\bra{\gamma_{0},\gamma}_{1}(Zb+Yc)\alpha^{3}+\bra{\gamma_{0},\gamma}_{1}(Zc\alpha^{4}))=0$
+		since left side of all above equations is a ploynomila degree 4 in variable $\alpha$.if we consider must be hold ,then the coefficients are qual to zero.which means :
+		\\
+	 $ \bra{\gamma_{0},\gamma}_{1}*(1+a+Xa) =0$\\
+	$\bra{\gamma_{0},\gamma}_{1}*(b+Ya+Xb+Yc)=0  $\\
+	$ (\bra{\gamma_{0},\gamma}_{1}*(Z+Za+Yb+Xc+Zc)=0 $\\
+	$ \bra{\gamma_{0},\gamma}_{1}(Zb+Yc)=0 $\\
+	$ \bra{\gamma_{0},\gamma}_{1}(Zc)=0 $
+	\begin{equation}
+	E=\bra{\gamma_{1}}
+	\begin{bmatrix}
+	1+a+Xa\\
+	b+Ya+Xb+Yc\\
+	Z+Za+Yb+Xc+Zc\\
+	Zb+Cc\\
+	Zc
+	\end{bmatrix}
+	\end{equation}
+ if we assume $ \ket{\gamma_{0}}$ is a constant parameter,then every bipartition have 5 homogenous linear  equations with 2 unknowns .and we could write these linear homogenous equation in matrix form.\\
+$ C|AB cut $\\
+$ \bra{\xi}_{0}\ket{(1,X+Y\alpha+Z\alpha^{2})}\otimes\bra{\gamma_{0},\gamma}_{1}\ket{(1,a+b\alpha+c\alpha^{2}),(1,A+B\alpha+C\alpha^{2})}=0 $\\
+$ \bra{\zeta}_{0}\otimes(1,X+Y\alpha+Z\alpha^{2})\otimes\bra{\gamma_{0},\gamma}_{1}((1,a+b\alpha+c\alpha^{2}),(1,A+B\alpha+C\alpha^{2}),Aa+(Ba+Ab+Bc)\alpha+(Ca+Bb+Ac+Cc)\alpha^{2}+(Cb+Bc)\alpha^{3}+Cc\alpha^{4})=0 $\\
+After sorting:\\}
+		\ParallelRText{$ \bra{\gamma_{0},\gamma}_{1}*(1+a+Aa)+\bra{\gamma_{0},\gamma}_{1}*(b+Ba+Ab+Bc)\alpha+(\bra{\gamma_{0},\gamma}_{1}*(C+Ca+BB+Ac+Cc)\alpha^{2}+\bra{\gamma_{0},\gamma}_{1}(Cbb+Bc)\alpha^{3}+\bra{\gamma_{0},\gamma}_{1}(Cc\alpha^{4}))=0$
+			\\
+			since left side of all above equations is a ploynomila degree 4 in variable $\alpha$.if we consider must be hold ,then the coefficients are qual to zero.which means :
+			\\
+			$ \bra{\gamma_{0},\gamma}_{1}*(1+a+Aa) =0$\\
+			$\bra{\gamma_{0},\gamma}_{1}*(b+Ba+Ab+Bc)=0  $\\
+			$ (\bra{\gamma_{0},\gamma}_{1}*(C+Ca+BB+Ac+Cc)=0 $\\
+			$ \bra{\gamma_{0},\gamma}_{1}(Cbb+Bc)=0 $\\
+			$ \bra{\gamma_{0},\gamma}_{1}(Cc)=0 $
+			\\
+			$  $
+			\\
+			if we assume $ \ket{\gamma_{0}}$ is a constant parameter,then every bipartition have 5 homogenous linear  equations with 2 unknowns .and we could write these linear homogenous equation in matrix form.\\
+			\\
+			\begin{equation}
+			E=\bra{\gamma_{1}}
+			\begin{bmatrix}
+			b+Ba+Ab+Bc\\
+			C+Ca+Bb+Ac+Cc\\
+			Cb+Bc\\
+			Cc
+			\end{bmatrix}
+			\end{equation}
+		and this kind of matrix does not exit for satisfying $ \bra{\zeta,\gamma}\ket{\Psi}=0 \ \  \forall \alpha $ where $ \ket{\Psi}\in B $
+		and let $ \bar{B} $ be a GES,it is requires that the system only has the trivial soultion.and it will happen when the matirx E of the sytem is full rank.
+		r(E)=5,for all $ \bra{\gamma_{1}} $ is not same time equal to zero.	
+this scenerio is same to in all bipartitaion cases.
+from above ,it could give  an following theoroem\\
+\textbf{Theorem:}Assume $\bar{B}$ is the subspace of $ H_{2^{3}}\subset (C^{2})^{n} $ orthogonal to 
+spane of the vectors in B.then  $   \bar{B}  $ is a GES,and dimention is 3 ,satisfying this condition the matrix E for any bipartitation have  full rank with respect any   $ \gamma .$ 
+
+}
+			\ParallelPar
+	\end{Parallel}
+		
+\begin{Parallel}[v]{0.49\textwidth}{0.49\textwidth}
+
+			\ParallelLText{If we extend this situation to in general cases,then we have the following 
+				theorem.\\
+			\textbf{Theorem:}Assume $\bar{B}$ is the subspace of $ H_{2^{n}}\subset (C^{2})^{n} $ orthogonal to spane of the vectors in B.then  $   \bar{B}  $ is a GES,and dimention is $ 2^{n-1}-1 $ ,satisfying this condition the matrix E for any bipartitation have  full rank with respect any   $ \gamma .$
+		
+\textbf{EXAMPLE1.}Let the vectors spanning the subspace orthogonal toGES are given by following:\\
+$A|BC$
+\\
+AB: $ (1,a+b\alpha+c\alpha^{2})_{A}\otimes(1,A+B\alpha+C\alpha^{2})_{B}\ =(1,a+b\alpha+c\alpha^{2},A+B\alpha+C^{2},Aa+(Ba+Ab+Bc)\alpha+(Ca+Bb+Ac+Cc)\alpha^{2}+(Cb+Bc)\alpha^{3}+Cc\alpha^{4})$  \\
+,we could assign values for cofficients and  rewrite it in the form :\\
+\begin{equation*}
+(1,\alpha) _{A}\otimes (1,\alpha)_{B}(1,\alpha)_{C}  \ \  \forall \alpha\in C
+\end{equation*}
+
+
+\begin{equation*}
+(1,\alpha) _{A}\otimes (1,\alpha,\alpha,\alpha^{2})_{BC}  \ \  \forall \alpha\in C   \\
+\end{equation*}
+BC spane 3 dimentional vector spave,\\
+\begin{equation*}
+(1,\alpha,\alpha,\alpha^{2},\alpha,\alpha^{2},\alpha^{2},\alpha^{3})_{ABC}
+\end{equation*}
+set of 4 linealrly independent polynomilays.which implies:
+\begin{equation*}
+u=dimspanB
+\\
+\end{equation*}
+obiviusly,it is possible to chose u values of $\alpha $ so that the set 
+\begin{equation*}
+\bar{B}=\{\ket{\Psi(\alpha_{i})}\}_{i=1}^{4}   \ \      \forall \alpha \in C
+\end{equation*}
+fix vectors of $ \alpha $
+\\
+\begin{equation*}
+(1,\alpha_{1})_{A}\otimes(1,\alpha_{1})_{B}\otimes(1,\alpha_{1})_{C} 
+\end{equation*}
+
+\begin{equation*}
+(1,\alpha_{2})_{A}\otimes(1,\alpha_{2})_{B}\otimes(1,\alpha_{2})_{C}\\
+\end{equation*}
+
+\begin{equation*}
+(1,\alpha_{3})_{A}\otimes(1,\alpha_{3})_{B}\otimes(1,\alpha_{3})_{C}\\
+\end{equation*}
+
+\begin{equation*}
+(1,\alpha_{4})_{A}\otimes(1,\alpha_{4})_{B}\otimes(1,\alpha_{4})_{C}
+\end{equation*}
+\\
+we need to check is there a vector in any bipartation  orthogonal to all the\ \ 
+\\
+
+}
+                	\ParallelRText{ vectors above.\\
+                		$ B|AC  $  bipartition \\
+                		AC:$ (1,\alpha,\alpha,\alpha^{2}) $  spane 3 dimenstion vector space\\
+                		$ (1,\alpha,\alpha,\alpha^{2},\alpha,\alpha^{2},\alpha^{2},\alpha^{3})_{ABC} $
+                		set of 4 linearly independent polynomilas.
+                		\begin{equation*}
+(1,0)_{A}\otimes(1,0)_{B}\otimes(1,0)_{C} =(1,\alpha)_{A}\otimes(1,0,0,1)_{BC} 
+                		\end{equation*}
+                		
+                		\begin{equation*}
+(1,1)_{A}\otimes(1,1)_{A}\otimes(1,1)_{C} =(1,1)_{B}\otimes(1,1,1,1)_{BC}
+                		\end{equation*}      
+                		
+                		\begin{equation*}
+(1,-1)_{A}\otimes(1,-1)_{A}\otimes(1,-1)_{C}=(1,-1)_{B}\otimes(1,-1,-1,1)_{BC}  
+                		\end{equation*}  	
+                		
+                		\begin{equation*}
+(1,2)_{A}\otimes(1,2)_{A}\otimes(1,2)_{C}=(1,2)_{B}\otimes(1,2,2,4)_{BC}
+                		\end{equation*}
+  It is not hurd to see that the vector $ (2,-1)_{B}\otimes(0,1,-1,0)_{AC} $    orthogonal to all above vectors.          		
+                		\\
+                		\\
+                		when we give some specific value for $ \alpha $,and the dimention of otrhocomplement of span$ \bar{B} $ are diffrent value.and the diffrent possiblit of value for cofficients in cordinates is  $3^{9} $
+                	}
+				\ParallelPar
+		\end{Parallel}
+
+\end{document}
